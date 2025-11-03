@@ -3,15 +3,21 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    // Speed Values -Lud
     public float PlayerSpeed;
+    public float CameraSpeed;
+
+    // Dash Values -Lud
+    [SerializeField] KeyCode dash = KeyCode.LeftShift;
+    float DashLenght = 1;
+    bool CanDash = true;
+
 
     [SerializeField] KeyCode Up = KeyCode.W;
     [SerializeField] KeyCode Down = KeyCode.S;
     [SerializeField] KeyCode Right = KeyCode.D;
     [SerializeField] KeyCode Left = KeyCode.A;
-    [SerializeField] KeyCode dash = KeyCode.LeftShift;
-    [SerializeField] float DashLenght = 1;
-    bool CanDash = true;
+
     void Update()
     {
         // Player Rotation To Mouse -Lud
@@ -36,8 +42,12 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    void LateUpdate() // Lerps The Camera Based On The Player -Lud
+    {
+        Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, 10), Time.deltaTime * CameraSpeed);
+    }
 
-    IEnumerator DelayAction(float delayTime)
+    IEnumerator DelayAction(float delayTime) // Does A Dash And Delays It -Lud
     {
         transform.position += transform.up * DashLenght;
         CanDash = false;
