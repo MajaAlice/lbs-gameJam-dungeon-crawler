@@ -30,20 +30,36 @@ public class EnemyManager : MonoBehaviour
 
     private void Update() // Switches To The Right Int Then Uses It To Move
     {
+
+        Vector3 Diffrence = Player.transform.position - transform.position;
+        float Magnitude = Diffrence.magnitude;
+        Diffrence.Normalize();
+        float RotaitionZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, RotaitionZ - 90);
+
         switch (Int)
         {
             case EnemyIntellagence.None:
                 Debug.Log("Value Missing");
                 break;
             case EnemyIntellagence.TankMelee:
+                transform.position = transform.position + transform.up * (Speed * Time.deltaTime);
 
-                Vector3 Diffrence = Player.transform.position - transform.position;
-                Diffrence.Normalize();
-                float RotaitionZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.Euler(0f, 0f, RotaitionZ - 90);
-                transform.position = transform.position + transform.up * Speed * Time.deltaTime;
-
+                if (Magnitude < 2)
+                {
+                    // Make Slash -Lud
+                }
                 break;
+            case EnemyIntellagence.MuskeetRanged:
+                if ((Player.transform.position - transform.position).magnitude > 10)
+                {
+
+                }
+                else if ((Player.transform.position - transform.position).magnitude < 10)
+                {
+                    transform.position = transform.position - transform.up * (Speed * Time.deltaTime);
+                }
+                    break;
             default:
                 break;
         }
