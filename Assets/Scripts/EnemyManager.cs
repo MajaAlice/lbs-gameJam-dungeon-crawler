@@ -2,10 +2,66 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    public ushort Health;
 
-    enum EnemyAI
+    public int Health;
+    public int MaxHealth;
+    public float Speed;
+
+    public GameObject Player;
+
+    // Enemy Enum Holders -Lud
+    public EnemyIntellagence Int = EnemyIntellagence.None;
+    public EnemyResistances Res = EnemyResistances.None;
+
+    public enum EnemyIntellagence
     {
         None,
+        MuskeetRanged,
+        KatanaMelee,
+        TankMelee,
+    }
+    public enum EnemyResistances
+    {
+        None,
+        Katana,
+        Gun,
+        Sake,
+    }
+
+    private void Update() // Switches To The Right Int Then Uses It To Move
+    {
+
+        Vector3 Diffrence = Player.transform.position - transform.position;
+        float Magnitude = Diffrence.magnitude;
+        Diffrence.Normalize();
+        float RotaitionZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, RotaitionZ - 90);
+
+        switch (Int)
+        {
+            case EnemyIntellagence.None:
+                Debug.Log("Value Missing");
+                break;
+            case EnemyIntellagence.TankMelee:
+                transform.position = transform.position + transform.up * (Speed * Time.deltaTime);
+
+                if (Magnitude < 2)
+                {
+                    // Make Slash -Lud
+                }
+                break;
+            case EnemyIntellagence.MuskeetRanged:
+                if ((Player.transform.position - transform.position).magnitude > 10)
+                {
+
+                }
+                else if ((Player.transform.position - transform.position).magnitude < 10)
+                {
+                    transform.position = transform.position - transform.up * (Speed * Time.deltaTime);
+                }
+                    break;
+            default:
+                break;
+        }
     }
 }
