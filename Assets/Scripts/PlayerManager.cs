@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    public GameObject PlayerSlash;
     // Speed Values -Lud
     public float PlayerSpeed;
     public float CameraSpeed;
@@ -11,6 +12,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] KeyCode dash = KeyCode.LeftShift;
     float DashLenght = 1;
     bool CanDash = true;
+    bool CanSlash = true;
+
+    KeyCode Slash = KeyCode.Mouse0;
 
 
     [SerializeField] KeyCode Up = KeyCode.W;
@@ -38,20 +42,33 @@ public class PlayerManager : MonoBehaviour
 
         if (Input.GetKeyDown(dash) && CanDash)
         {
-            StartCoroutine(DelayAction(1));
+            StartCoroutine(DelayDash(1));
+        }
+
+        if (Input.GetKeyDown(Slash) && CanSlash)
+        {
+            StartCoroutine(DelaySlash(0.5f));
         }
     }
 
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
     {
-        Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, 10), Time.deltaTime * CameraSpeed);
+        Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -10), Time.deltaTime * CameraSpeed);
     }
 
-    IEnumerator DelayAction(float delayTime) // Does A Dash And Delays It -Lud
+    IEnumerator DelayDash(float delayTime) // Does A Dash And Delays It -Lud & Maja
     {
         transform.position += transform.up * DashLenght;
         CanDash = false;
         yield return new WaitForSeconds(delayTime);
         CanDash = true;
+    }
+    IEnumerator DelaySlash(float delayTime)                     //handles the slash and it's cooldown
+    {
+        Vector3 SlashPosition = transform.position + transform.up * 2;
+        Instantiate(PlayerSlash, SlashPosition, transform.rotation);
+        CanSlash = false;
+        yield return new WaitForSeconds(delayTime);
+        CanSlash = true;
     }
 }

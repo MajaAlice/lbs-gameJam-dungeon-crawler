@@ -369,13 +369,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc0127bbfea5454998a34cf66eed9b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerSlash: {fileID: 53005353494126858, guid: 31a85d0408f703448a6224a0c0b7e681, type: 3}
   PlayerSpeed: 5
+  CameraSpeed: 0
+  dash: 304
   Up: 119
   Down: 115
   Right: 100
   Left: 97
-  dash: 304
-  DashLenght: 5
 --- !u!4 &692800570
 Transform:
   m_ObjectHideFlags: 0
