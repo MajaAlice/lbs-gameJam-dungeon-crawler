@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5050992428881278727}
   - component: {fileID: 3240658949445544129}
   - component: {fileID: 876457610076167360}
+  - component: {fileID: -8810079289041039519}
   m_Layer: 0
   m_Name: 'PlayerSlash '
   m_TagString: Untagged
@@ -107,6 +108,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-8810079289041039519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53005353494126858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b06836d6a9c5a4fbbe4c41f398cd42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1750476695464583407
 GameObject:
   m_ObjectHideFlags: 0

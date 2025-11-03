@@ -370,9 +370,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSlash: {fileID: 53005353494126858, guid: 31a85d0408f703448a6224a0c0b7e681, type: 3}
+  Dash: {fileID: 6795609020376876277, guid: 9086bb3521a74ad4cab6c97c8e2af4ac, type: 3}
   PlayerSpeed: 5
   CameraSpeed: 0
   dash: 304
+  DashLenght: 5
   Up: 119
   Down: 115
   Right: 100

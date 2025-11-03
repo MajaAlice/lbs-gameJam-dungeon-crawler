@@ -4,13 +4,14 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public GameObject PlayerSlash;
+    public GameObject Dash;
     // Speed Values -Lud
     public float PlayerSpeed;
     public float CameraSpeed;
 
     // Dash Values -Lud
     [SerializeField] KeyCode dash = KeyCode.LeftShift;
-    float DashLenght = 1;
+    [SerializeField] float DashLenght = 5;
     bool CanDash = true;
     bool CanSlash = true;
 
@@ -58,14 +59,18 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator DelayDash(float delayTime) // Does A Dash And Delays It -Lud & Maja
     {
-        transform.position += transform.up * DashLenght;
+
+        Vector3 DashPosition = transform.position + (DashLenght / 2) * transform.up;
+        GameObject DashThing = Instantiate(Dash, DashPosition, transform.rotation);
+        DashThing.transform.localScale = new Vector3(0.7f, DashLenght, 1);
+        transform.position += transform.up * DashLenght; 
         CanDash = false;
         yield return new WaitForSeconds(delayTime);
         CanDash = true;
     }
     IEnumerator DelaySlash(float delayTime)                     //handles the slash and it's cooldown
     {
-        Vector3 SlashPosition = transform.position + transform.up * 2;
+        Vector3 SlashPosition = transform.position + transform.up * 0.7f;
         Instantiate(PlayerSlash, SlashPosition, transform.rotation);
         CanSlash = false;
         yield return new WaitForSeconds(delayTime);

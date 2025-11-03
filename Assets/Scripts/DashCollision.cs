@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-public class PlayerSlash : MonoBehaviour
+public class DashCollision : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -10,3 +10,4 @@ public class PlayerSlash : MonoBehaviour
     }
 
 }
+
