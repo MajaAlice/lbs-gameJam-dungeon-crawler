@@ -21,7 +21,7 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetKey(Up)) { MovementVector += Vector2.up; }
         if (Input.GetKey(Down)) { MovementVector += Vector2.down; }
         if (Input.GetKey(Right)) { MovementVector += Vector2.right; }
-        if (Input.GetKey(Up)) { MovementVector += Vector2.left; }
+        if (Input.GetKey(Left)) { MovementVector += Vector2.left; }
 
         MovementVector = MovementVector.normalized * (PlayerSpeed * Time.deltaTime);
         gameObject.transform.position += new Vector3(MovementVector.x, MovementVector.y, 0);
