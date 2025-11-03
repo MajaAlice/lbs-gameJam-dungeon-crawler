@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -8,6 +9,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] KeyCode Down = KeyCode.S;
     [SerializeField] KeyCode Right = KeyCode.D;
     [SerializeField] KeyCode Left = KeyCode.A;
+    [SerializeField] KeyCode dash = KeyCode.LeftShift;
+    [SerializeField] float DashLenght = 1;
+    bool CanDash = true;
     void Update()
     {
         // Player Rotation To Mouse -Lud
@@ -25,5 +29,19 @@ public class PlayerManager : MonoBehaviour
 
         MovementVector = MovementVector.normalized * (PlayerSpeed * Time.deltaTime);
         gameObject.transform.position += new Vector3(MovementVector.x, MovementVector.y, 0);
+
+        if (Input.GetKeyDown(dash) && CanDash)
+        {
+            StartCoroutine(DelayAction(1));
+        }
+    }
+
+
+    IEnumerator DelayAction(float delayTime)
+    {
+        transform.position += transform.up * DashLenght;
+        CanDash = false;
+        yield return new WaitForSeconds(delayTime);
+        CanDash = true;
     }
 }

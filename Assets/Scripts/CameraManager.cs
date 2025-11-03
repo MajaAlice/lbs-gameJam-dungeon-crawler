@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraManager : MonoBehaviour
 {
 
-    GameObject Player;
+   public GameObject Player;
 
     float LerpSpeed = 1;
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
