@@ -69,14 +69,18 @@ public class EnemyManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "PlayerAttack")
+        if (collision.CompareTag("MeleePlayerAttack"))
         {
-            Health--;
-
+            Health -= PlayerManager.AttackDamage;
+            PlayerManager.Blood++;
             if (Health <= 0)
             {
                 Destroy(gameObject);
             }
+        }
+        else if (collision.CompareTag("RangedPlayerAttack"))
+        {
+            Debug.Log("i am lazy");
         }
     }
 

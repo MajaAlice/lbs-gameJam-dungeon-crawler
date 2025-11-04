@@ -1,19 +1,22 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
     public GameObject PlayerSlash;
-    // Speed Values -Lud
+    // Player Values -Lud
+    public byte Sake; // Max 6
+    public byte Blood; // Max 9
+    public byte AttackDamage;
     public float PlayerSpeed;
     public float CameraSpeed;
-
+    
     // Dash Values -Lud
     [SerializeField] KeyCode dash = KeyCode.LeftShift;
     float DashLenght = 1;
     bool CanDash = true;
     bool CanSlash = true;
-
     KeyCode Slash = KeyCode.Mouse0;
 
 
