@@ -36,6 +36,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] KeyCode Slash = KeyCode.Mouse0;
     [SerializeField] KeyCode Aim = KeyCode.Mouse1;
 
+    //raycast variables
+    public RaycastHit2D HitInfo;
+
     void Update()
     {
         // Player Rotation To Mouse -Lud
@@ -61,14 +64,14 @@ public class PlayerManager : MonoBehaviour
 
 
 
-        // Switches Player into aim mode - Maja
+        // Switches Player between aim mode - Maja
         if (Input.GetKey(Aim))
         {
-            if (Input.GetKey(Slash))
-            {
-                RaycastHit2D HitInfo = Physics2D.Raycast(transform.position, new Vector3(0, 0, RotationZ));
-            }
-            
+            //controls the shooting - Maja
+            //if (Input.GetKey(Slash))
+            //{
+            //    var HitInfo = Physics2D.Raycast(transform.position, transform.up);
+            //}
         }
         else if (Input.GetKeyDown(Slash) && CanSlash)
         {

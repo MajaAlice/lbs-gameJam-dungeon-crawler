@@ -638,8 +638,12 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
-      propertyPath: SlashSize.y
+      propertyPath: SlashSize.x
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: SlashSize.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
       propertyPath: AttackDamage

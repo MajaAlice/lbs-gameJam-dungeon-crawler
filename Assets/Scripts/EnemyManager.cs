@@ -76,6 +76,10 @@ public class EnemyManager : MonoBehaviour
             default:
                 break;
         }
+        //if (PlayerManager.HitInfo == gameObject)
+        //{
+        //    Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.RangedDamageMult);
+        //}
     }
 
     void MoveEnemyTowardsPlayer()
