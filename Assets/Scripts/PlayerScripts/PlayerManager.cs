@@ -9,28 +9,28 @@ public class PlayerManager : MonoBehaviour
     public GameObject Dash;
 
     // Player Values -Lud
-    public short Health; // Base 7
-    public byte Sake; // Max 6
-    public byte Blood; // Max 9
-    public byte AttackDamage;
-    public float MeleeDamageMult;
-    public float RangedDamageMult;
+    public int Health = 7; // Base 7
+    public byte Sake = 0; // Max 6
+    public byte Blood = 0; // Max 9
+    public byte AttackDamage = 1;
+    public float MeleeDamageMult = 1;
+    public float RangedDamageMult = 1;
     // Speed Values -Lud
-    public float PlayerSpeed;
-    public float CameraSpeed;
+    public float PlayerSpeed = 10;
+    public float CameraSpeed = 5;
     public float DashLenght = 1;
-    Vector3 SlashSize;
+    public Vector3 SlashSize = new Vector3(2,2,1);
 
     // Bools -Lud
     bool CanDash = true;
     bool CanSlash = true;
 
-    // Movement -Lud
+    // Movement Keys -Lud
     [SerializeField] KeyCode Up = KeyCode.W;
     [SerializeField] KeyCode Down = KeyCode.S;
     [SerializeField] KeyCode Right = KeyCode.D;
     [SerializeField] KeyCode Left = KeyCode.A;
-    // Attacks -Lud
+    // Attacks Keys -Lud
     [SerializeField] KeyCode dash = KeyCode.LeftShift;
     [SerializeField] KeyCode Slash = KeyCode.Mouse0;
 
@@ -70,10 +70,10 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyManager Enemy = collision.GetComponent<EnemyManager>();
+        EnemyManager EnemyManager = collision.GetComponent<EnemyManager>();
         if (collision.CompareTag("MeleeEnemyAttack"))
         {
-            Health -= Enemy.Damage;
+            Health -= EnemyManager.Damage;
         }
     }
 
