@@ -3,18 +3,18 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
 
-    public short Health;
-    public byte Damage;
-    public float Speed;
+    public int Health = 3;
+    public byte Damage = 1;
+    public float Speed = 7;
 
     GameObject Player;
     PlayerManager PlayerManager;
 
     // Enemy Enum Holders -Lud
-    public EnemyIntellagence Int = EnemyIntellagence.None;
+    public EnemyLogic EL = EnemyLogic.None;
     public EnemyResistances Res = EnemyResistances.None;
 
-    public enum EnemyIntellagence
+    public enum EnemyLogic
     {
         None,
         MuskeetRanged,
@@ -43,16 +43,16 @@ public class EnemyManager : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, RotaitionZ - 90), 10);
 
         float Distance = (Player.transform.position - transform.position).magnitude;
-        switch (Int)
+        switch (EL)
         {
-            case EnemyIntellagence.None:
+            case EnemyLogic.None:
                 Debug.Log("Value Missing");
                 break;
-            case EnemyIntellagence.TankMelee:
+            case EnemyLogic.TankMelee:
                 transform.position = transform.position + transform.up * (Speed * Time.deltaTime); // Dumb
 
                 break;
-            case EnemyIntellagence.MuskeetRanged:
+            case EnemyLogic.MuskeetRanged:
                 if (Distance < 10)
                 {
                     transform.position = transform.position - transform.up * (Speed * Time.deltaTime); // Dumb
@@ -71,7 +71,8 @@ public class EnemyManager : MonoBehaviour
     {
         if (collision.CompareTag("MeleePlayerAttack"))
         {
-            Health -= PlayerManager.AttackDamage;
+            
+            Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.MeleeDamageMult);
             PlayerManager.Blood++;
             if (Health <= 0)
             {
