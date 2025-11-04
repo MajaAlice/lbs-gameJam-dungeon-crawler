@@ -7,7 +7,8 @@ public class EnemyManager : MonoBehaviour
     public int MaxHealth;
     public float Speed;
 
-    public GameObject Player;
+    GameObject Player;
+    PlayerManager PlayerManager;
 
     // Enemy Enum Holders -Lud
     public EnemyIntellagence Int = EnemyIntellagence.None;
@@ -27,41 +28,56 @@ public class EnemyManager : MonoBehaviour
         Gun,
         Sake,
     }
-
+    private void Start()
+    {
+        // Make Sure The Player Has The Player Tag -Lud
+        Player = GameObject.FindGameObjectWithTag("Player");
+        PlayerManager = Player.GetComponent<PlayerManager>();
+    }
     private void Update() // Switches To The Right Int Then Uses It To Move
     {
-
-        Vector3 Diffrence = Player.transform.position - transform.position;
-        float Magnitude = Diffrence.magnitude;
-        Diffrence.Normalize();
+        // Gets The Rotation To Point Att The Player On The Z Axis -Lud
+        Vector3 Diffrence = (Player.transform.position - transform.position).normalized;
         float RotaitionZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, RotaitionZ - 90);
+        // Makes The Enemy Rotate Slower Then Instantly -Lud
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, RotaitionZ - 90), 10);
 
+        float Distance = (Player.transform.position - transform.position).magnitude;
         switch (Int)
         {
             case EnemyIntellagence.None:
                 Debug.Log("Value Missing");
                 break;
             case EnemyIntellagence.TankMelee:
-                transform.position = transform.position + transform.up * (Speed * Time.deltaTime);
+                transform.position = transform.position + transform.up * (Speed * Time.deltaTime); // Dumb
 
-                if (Magnitude < 2)
-                {
-                    // Make Slash -Lud
-                }
                 break;
             case EnemyIntellagence.MuskeetRanged:
-                if ((Player.transform.position - transform.position).magnitude > 10)
+                if (Distance < 10)
                 {
-
+                    transform.position = transform.position - transform.up * (Speed * Time.deltaTime); // Dumb
                 }
-                else if ((Player.transform.position - transform.position).magnitude < 10)
+                else if (Distance > 15)
                 {
-                    transform.position = transform.position - transform.up * (Speed * Time.deltaTime);
+                    transform.position = transform.position + transform.up * (Speed * Time.deltaTime); // Dumb
                 }
                     break;
             default:
                 break;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "PlayerAttack")
+        {
+            Health--;
+
+            if (Health <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
 }
