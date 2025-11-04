@@ -6,6 +6,7 @@ public class EnemyManager : MonoBehaviour
     public int Health = 3;
     public byte Damage = 1;
     public float Speed = 7;
+    public float AimSpeed;
 
     GameObject Player;
     PlayerManager PlayerManager;
@@ -49,19 +50,9 @@ public class EnemyManager : MonoBehaviour
                 Debug.Log("Value Missing");
                 break;
             case EnemyLogic.TankMelee:
-                transform.position = transform.position + transform.up * (Speed * Time.deltaTime); // Dumb
-
                 break;
             case EnemyLogic.MuskeetRanged:
-                if (Distance < 10)
-                {
-                    transform.position = transform.position - transform.up * (Speed * Time.deltaTime); // Dumb
-                }
-                else if (Distance > 15)
-                {
-                    transform.position = transform.position + transform.up * (Speed * Time.deltaTime); // Dumb
-                }
-                    break;
+                break;
             default:
                 break;
         }

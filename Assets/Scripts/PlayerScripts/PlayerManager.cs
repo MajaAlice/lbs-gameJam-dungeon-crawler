@@ -19,7 +19,7 @@ public class PlayerManager : MonoBehaviour
     public float PlayerSpeed = 10;
     public float CameraSpeed = 5;
     public float DashLenght = 1;
-    Vector3 SlashSize;
+    public Vector3 SlashSize = new Vector3(2,2,1);
 
     // Bools -Lud
     bool CanDash = true;
