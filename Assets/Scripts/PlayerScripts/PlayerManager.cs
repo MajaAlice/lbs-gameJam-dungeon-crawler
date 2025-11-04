@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
     public float CameraSpeed = 5;
     public float DashLenght = 1;
     public Vector3 SlashSize = new Vector3(2,2,1);
+    public float SlashDistance = 1;
 
     // Bools -Lud
     bool CanDash = true;
@@ -89,7 +90,7 @@ public class PlayerManager : MonoBehaviour
     }
     IEnumerator DelaySlash(float delayTime)                     //handles the slash and it's cooldown -Maja
     {
-        Vector3 SlashPosition = transform.position + transform.up * 2;
+        Vector3 SlashPosition = transform.position + transform.up * SlashDistance;
         GameObject TempSlash = Instantiate(PlayerSlash, SlashPosition, transform.rotation);
         TempSlash.transform.localScale = SlashSize;
         CanSlash = false;
