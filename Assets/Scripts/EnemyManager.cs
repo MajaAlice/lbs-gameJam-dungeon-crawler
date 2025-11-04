@@ -49,9 +49,9 @@ public class EnemyManager : MonoBehaviour
     {
         // Gets The Rotation To Point Att The Player On The Z Axis -Lud
         Vector3 Diffrence = (Player.transform.position - transform.position).normalized;
-        float RotaitionZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
+        float RotationZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
         // Makes The Enemy Rotate Slower Then Instantly -Lud
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, RotaitionZ - 90), AimSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, RotationZ - 90), AimSpeed * Time.deltaTime);
 
         float Distance = (Player.transform.position - transform.position).magnitude;
         switch (EL)
@@ -61,17 +61,26 @@ public class EnemyManager : MonoBehaviour
                 break;
             case EnemyLogic.TankMelee:
 
-                if (Mathf.Abs(transform.rotation.z - (RotaitionZ - 90)) < 15)
+                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off
+                if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash)
                 {
                     StartCoroutine(DelaySlash(SlashDelay));
                 }
-
+                if(Distance > 1)
+                {
+                    MoveEnemyTowardsPlayer();
+                }
                 break;
             case EnemyLogic.MuskeetRanged:
                 break;
             default:
                 break;
         }
+    }
+
+    void MoveEnemyTowardsPlayer()
+    {
+        
     }
 
     IEnumerator DelaySlash(float delayTime)

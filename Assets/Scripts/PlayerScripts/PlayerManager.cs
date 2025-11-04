@@ -41,8 +41,8 @@ public class PlayerManager : MonoBehaviour
         // Player Rotation To Mouse -Lud
         Vector3 Diffrence = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         Diffrence.Normalize();
-        float RotaitionZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, RotaitionZ - 90);
+        float RotationZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, RotationZ - 90);
 
         // Player Movement -Lud
         Vector2 MovementVector = Vector2.zero;
