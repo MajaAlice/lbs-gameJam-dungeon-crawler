@@ -33,6 +33,7 @@ public class PlayerManager : MonoBehaviour
     // Attacks Keys -Lud
     [SerializeField] KeyCode dash = KeyCode.LeftShift;
     [SerializeField] KeyCode Slash = KeyCode.Mouse0;
+    [SerializeField] KeyCode Aim = KeyCode.Mouse1;
 
     void Update()
     {
@@ -61,6 +62,13 @@ public class PlayerManager : MonoBehaviour
         {
             StartCoroutine(DelaySlash(0.5f));
         }
+
+        // Switches Player into aim mode - Maja
+        if (Input.GetKey(Aim))
+        {
+            
+        }
+
     }
 
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
