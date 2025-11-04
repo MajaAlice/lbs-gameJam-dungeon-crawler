@@ -61,15 +61,17 @@ public class EnemyManager : MonoBehaviour
                 break;
             case EnemyLogic.TankMelee:
 
-                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off
+                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
                 if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash)
                 {
                     StartCoroutine(DelaySlash(SlashDelay));
                 }
+                // Moves Player So Long As Distance Is Less Then One -Lud
                 if(Distance > 1)
                 {
                     MoveEnemyTowardsPlayer();
                 }
+
                 break;
             case EnemyLogic.MuskeetRanged:
                 break;
@@ -84,7 +86,8 @@ public class EnemyManager : MonoBehaviour
 
     void MoveEnemyTowardsPlayer()
     {
-        
+        transform.position = Vector3.Lerp(Player.transform.position, transform.position, Speed * Time.deltaTime);
+
     }
 
     IEnumerator DelaySlash(float delayTime)
