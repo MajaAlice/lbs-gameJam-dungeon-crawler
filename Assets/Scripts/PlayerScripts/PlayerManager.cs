@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
     public float CameraSpeed = 5;
     public float DashLenght = 1;
     public Vector3 SlashSize = new Vector3(2,2,1);
+    public float SlashDistance = 1;
 
     // Bools -Lud
     bool CanDash = true;
@@ -33,6 +34,7 @@ public class PlayerManager : MonoBehaviour
     // Attacks Keys -Lud
     [SerializeField] KeyCode dash = KeyCode.LeftShift;
     [SerializeField] KeyCode Slash = KeyCode.Mouse0;
+    [SerializeField] KeyCode Aim = KeyCode.Mouse1;
 
     void Update()
     {
@@ -61,6 +63,13 @@ public class PlayerManager : MonoBehaviour
         {
             StartCoroutine(DelaySlash(0.5f));
         }
+
+        // Switches Player into aim mode - Maja
+        if (Input.GetKey(Aim))
+        {
+            
+        }
+
     }
 
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
@@ -89,7 +98,7 @@ public class PlayerManager : MonoBehaviour
     }
     IEnumerator DelaySlash(float delayTime)                     //handles the slash and it's cooldown -Maja
     {
-        Vector3 SlashPosition = transform.position + transform.up * 2;
+        Vector3 SlashPosition = transform.position + transform.up * SlashDistance;
         GameObject TempSlash = Instantiate(PlayerSlash, SlashPosition, transform.rotation);
         TempSlash.transform.localScale = SlashSize;
         CanSlash = false;

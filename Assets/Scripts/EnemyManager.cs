@@ -1,4 +1,8 @@
+using System;
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
+
 
 public class EnemyManager : MonoBehaviour
 {
@@ -6,10 +10,16 @@ public class EnemyManager : MonoBehaviour
     public int Health = 3;
     public byte Damage = 1;
     public float Speed = 7;
-    public float AimSpeed;
+    public float AimSpeed = 10;
 
     GameObject Player;
     PlayerManager PlayerManager;
+
+    GameObject Slash;
+    public bool CanSlash = true;
+    public float SlashDelay;
+    public Vector3 SlashSize;
+    public float SlashDistance;
 
     // Enemy Enum Holders -Lud
     public EnemyLogic EL = EnemyLogic.None;
@@ -41,7 +51,7 @@ public class EnemyManager : MonoBehaviour
         Vector3 Diffrence = (Player.transform.position - transform.position).normalized;
         float RotaitionZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
         // Makes The Enemy Rotate Slower Then Instantly -Lud
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, RotaitionZ - 90), 10);
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, RotaitionZ - 90), AimSpeed * Time.deltaTime);
 
         float Distance = (Player.transform.position - transform.position).magnitude;
         switch (EL)
@@ -50,12 +60,28 @@ public class EnemyManager : MonoBehaviour
                 Debug.Log("Value Missing");
                 break;
             case EnemyLogic.TankMelee:
+
+                if (Mathf.Abs(transform.rotation.z - (RotaitionZ - 90)) < 15)
+                {
+                    StartCoroutine(DelaySlash(SlashDelay));
+                }
+
                 break;
             case EnemyLogic.MuskeetRanged:
                 break;
             default:
                 break;
         }
+    }
+
+    IEnumerator DelaySlash(float delayTime)
+    {
+        Vector3 SlashPosition = transform.position + transform.up * SlashDistance;
+        GameObject TempSlash = Instantiate(Slash, SlashPosition, transform.rotation);
+        TempSlash.transform.localScale = SlashSize;
+        CanSlash = false;
+        yield return new WaitForSeconds(delayTime);
+        CanSlash = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
