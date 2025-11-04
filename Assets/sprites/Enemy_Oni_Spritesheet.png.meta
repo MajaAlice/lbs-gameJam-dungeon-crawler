@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 4817e0cd5525b4742bf73b2775922a53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4893792814645890631
+    second: Enemy_Oni_Spritesheet_0
+  - first:
+      213: -1130839735621251244
+    second: Enemy_Oni_Spritesheet_1
+  - first:
+      213: 2531995879124727782
+    second: Enemy_Oni_Spritesheet_2
+  - first:
+      213: 2339309514897891874
+    second: Enemy_Oni_Spritesheet_3
+  - first:
+      213: 3545027500822695909
+    second: Enemy_Oni_Spritesheet_4
+  - first:
+      213: -1112317174100836978
+    second: Enemy_Oni_Spritesheet_5
+  - first:
+      213: -575626734157394050
+    second: Enemy_Oni_Spritesheet_6
+  - first:
+      213: 4198920767354087070
+    second: Enemy_Oni_Spritesheet_7
+  - first:
+      213: -7041452297090308115
+    second: Enemy_Oni_Spritesheet_8
+  - first:
+      213: -5967328812938834131
+    second: Enemy_Oni_Spritesheet_9
+  - first:
+      213: -5191926982335025232
+    second: Enemy_Oni_Spritesheet_10
+  - first:
+      213: -597130352514807048
+    second: Enemy_Oni_Spritesheet_11
+  - first:
+      213: -6418156577240450829
+    second: Enemy_Oni_Spritesheet_12
+  - first:
+      213: 589258567131897341
+    second: Enemy_Oni_Spritesheet_13
+  - first:
+      213: -8064211914689194471
+    second: Enemy_Oni_Spritesheet_14
+  - first:
+      213: -2870968569317250979
+    second: Enemy_Oni_Spritesheet_15
+  - first:
+      213: -8099032296616859473
+    second: Enemy_Oni_Spritesheet_16
+  - first:
+      213: -3748786359667310772
+    second: Enemy_Oni_Spritesheet_17
+  - first:
+      213: 9198391166329483708
+    second: Enemy_Oni_Spritesheet_18
+  - first:
+      213: -8477210685533115083
+    second: Enemy_Oni_Spritesheet_19
+  - first:
+      213: -7717071256508158165
+    second: Enemy_Oni_Spritesheet_20
+  - first:
+      213: 1502018922877722626
+    second: Enemy_Oni_Spritesheet_21
+  - first:
+      213: 4008004175066294626
+    second: Enemy_Oni_Spritesheet_22
+  - first:
+      213: 1393017277631883992
+    second: Enemy_Oni_Spritesheet_23
+  - first:
+      213: 987910008082715017
+    second: Enemy_Oni_Spritesheet_24
+  - first:
+      213: 1117122090504548437
+    second: Enemy_Oni_Spritesheet_25
+  - first:
+      213: -6840878005951344938
+    second: Enemy_Oni_Spritesheet_26
+  - first:
+      213: -2872277720424029541
+    second: Enemy_Oni_Spritesheet_27
+  - first:
+      213: 2019346277878311138
+    second: Enemy_Oni_Spritesheet_28
+  - first:
+      213: 4764720644011668647
+    second: Enemy_Oni_Spritesheet_29
+  - first:
+      213: 4721676596079285501
+    second: Enemy_Oni_Spritesheet_30
+  - first:
+      213: 6770267411974625127
+    second: Enemy_Oni_Spritesheet_31
+  - first:
+      213: 5225425156392582337
+    second: Enemy_Oni_Spritesheet_32
+  - first:
+      213: -2442324683760012596
+    second: Enemy_Oni_Spritesheet_33
+  - first:
+      213: -7165629596232326532
+    second: Enemy_Oni_Spritesheet_34
+  - first:
+      213: 6325302519422313186
+    second: Enemy_Oni_Spritesheet_35
+  - first:
+      213: -5062487928646017346
+    second: Enemy_Oni_Spritesheet_36
+  - first:
+      213: -5207671174350794942
+    second: Enemy_Oni_Spritesheet_37
+  - first:
+      213: -3948081976197199357
+    second: Enemy_Oni_Spritesheet_38
+  - first:
+      213: -3333289632057080236
+    second: Enemy_Oni_Spritesheet_39
+  - first:
+      213: -1805014133698216511
+    second: Enemy_Oni_Spritesheet_40
+  - first:
+      213: -6728620318489927688
+    second: Enemy_Oni_Spritesheet_41
+  - first:
+      213: -5830244232544635715
+    second: Enemy_Oni_Spritesheet_42
+  - first:
+      213: 1486451162807826142
+    second: Enemy_Oni_Spritesheet_43
+  - first:
+      213: -6165551543614847690
+    second: Enemy_Oni_Spritesheet_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 171
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b13cae0d51c51cb0800000000000000
+      internalID: -4893792814645890631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 171
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f066c70437e40f0800000000000000
+      internalID: -1130839735621251244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 185
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e77bf346d4732320800000000000000
+      internalID: 2531995879124727782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 185
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2222e2f0c95e67020800000000000000
+      internalID: 2339309514897891874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 185
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef0789cab7723130800000000000000
+      internalID: 3545027500822695909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 185
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d37286c614090f0800000000000000
+      internalID: -1112317174100836978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 171
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f845bf886f208f0800000000000000
+      internalID: -575626734157394050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 153
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96a62ae030954a30800000000000000
+      internalID: 4198920767354087070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 153
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7e219617cb74e90800000000000000
+      internalID: -7041452297090308115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 153
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fc3d69f0acf2da0800000000000000
+      internalID: -5967328812938834131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 153
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfa726eae192f7b0800000000000000
+      internalID: -5191926982335025232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 137
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa40cdab1196b7f0800000000000000
+      internalID: -597130352514807048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 138
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8febc09902ee6a0800000000000000
+      internalID: -6418156577240450829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 137
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd90c67b877d2800800000000000000
+      internalID: 589258567131897341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 138
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9165a775df9261090800000000000000
+      internalID: -8064211914689194471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 121
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58a8881c454828d0800000000000000
+      internalID: -2870968569317250979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 121
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa86cb769057a9f80800000000000000
+      internalID: -8099032296616859473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 121
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f3335faa2a9fbc0800000000000000
+      internalID: -3748786359667310772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 121
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1f826d70047af70800000000000000
+      internalID: 9198391166329483708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 107
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d27a2bbc5ea5a80800000000000000
+      internalID: -8477210685533115083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 107
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f2479349477e490800000000000000
+      internalID: -7717071256508158165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 107
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200aa08904e38d410800000000000000
+      internalID: 1502018922877722626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 107
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269eb19df8a4f9730800000000000000
+      internalID: 4008004175066294626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 89
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8daea3f55ddf45310800000000000000
+      internalID: 1393017277631883992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 89
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981d2dd0be2c5bd00800000000000000
+      internalID: 987910008082715017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 89
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550f34f5f90d08f00800000000000000
+      internalID: 1117122090504548437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 89
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6decc77b2b15011a0800000000000000
+      internalID: -6840878005951344938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 75
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b926bd991ae9328d0800000000000000
+      internalID: -2872277720424029541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 75
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8a173adb8260c10800000000000000
+      internalID: 2019346277878311138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 75
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a439406e20bf1240800000000000000
+      internalID: 4764720644011668647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 75
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4d49df8d3c68140800000000000000
+      internalID: 4721676596079285501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 57
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767962d3752d4fd50800000000000000
+      internalID: 6770267411974625127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc7b278e70748840800000000000000
+      internalID: 5225425156392582337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 57
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2f05ed3ae1b1ed0800000000000000
+      internalID: -2442324683760012596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 57
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72eb8ce8d19e8c90800000000000000
+      internalID: -7165629596232326532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 43
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2ec07e02df7c750800000000000000
+      internalID: 6325302519422313186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 43
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebed9551d0e6eb9b0800000000000000
+      internalID: -5062487928646017346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 43
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f87c988a2aab7b0800000000000000
+      internalID: -5207671174350794942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 43
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ac4a84c589539c0800000000000000
+      internalID: -3948081976197199357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 25
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456cebb7db6cdb1d0800000000000000
+      internalID: -3333289632057080236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 25
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdbb52753d43f6e0800000000000000
+      internalID: -1805014133698216511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 25
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff9ee758732f92a0800000000000000
+      internalID: -6728620318489927688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 25
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4386da2cfc61fa0800000000000000
+      internalID: -5830244232544635715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 11
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6702ff47fe0a410800000000000000
+      internalID: 1486451162807826142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Oni_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 11
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635c97e998f8f6aa0800000000000000
+      internalID: -6165551543614847690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Enemy_Oni_Spritesheet_0: -4893792814645890631
+      Enemy_Oni_Spritesheet_1: -1130839735621251244
+      Enemy_Oni_Spritesheet_10: -5191926982335025232
+      Enemy_Oni_Spritesheet_11: -597130352514807048
+      Enemy_Oni_Spritesheet_12: -6418156577240450829
+      Enemy_Oni_Spritesheet_13: 589258567131897341
+      Enemy_Oni_Spritesheet_14: -8064211914689194471
+      Enemy_Oni_Spritesheet_15: -2870968569317250979
+      Enemy_Oni_Spritesheet_16: -8099032296616859473
+      Enemy_Oni_Spritesheet_17: -3748786359667310772
+      Enemy_Oni_Spritesheet_18: 9198391166329483708
+      Enemy_Oni_Spritesheet_19: -8477210685533115083
+      Enemy_Oni_Spritesheet_2: 2531995879124727782
+      Enemy_Oni_Spritesheet_20: -7717071256508158165
+      Enemy_Oni_Spritesheet_21: 1502018922877722626
+      Enemy_Oni_Spritesheet_22: 4008004175066294626
+      Enemy_Oni_Spritesheet_23: 1393017277631883992
+      Enemy_Oni_Spritesheet_24: 987910008082715017
+      Enemy_Oni_Spritesheet_25: 1117122090504548437
+      Enemy_Oni_Spritesheet_26: -6840878005951344938
+      Enemy_Oni_Spritesheet_27: -2872277720424029541
+      Enemy_Oni_Spritesheet_28: 2019346277878311138
+      Enemy_Oni_Spritesheet_29: 4764720644011668647
+      Enemy_Oni_Spritesheet_3: 2339309514897891874
+      Enemy_Oni_Spritesheet_30: 4721676596079285501
+      Enemy_Oni_Spritesheet_31: 6770267411974625127
+      Enemy_Oni_Spritesheet_32: 5225425156392582337
+      Enemy_Oni_Spritesheet_33: -2442324683760012596
+      Enemy_Oni_Spritesheet_34: -7165629596232326532
+      Enemy_Oni_Spritesheet_35: 6325302519422313186
+      Enemy_Oni_Spritesheet_36: -5062487928646017346
+      Enemy_Oni_Spritesheet_37: -5207671174350794942
+      Enemy_Oni_Spritesheet_38: -3948081976197199357
+      Enemy_Oni_Spritesheet_39: -3333289632057080236
+      Enemy_Oni_Spritesheet_4: 3545027500822695909
+      Enemy_Oni_Spritesheet_40: -1805014133698216511
+      Enemy_Oni_Spritesheet_41: -6728620318489927688
+      Enemy_Oni_Spritesheet_42: -5830244232544635715
+      Enemy_Oni_Spritesheet_43: 1486451162807826142
+      Enemy_Oni_Spritesheet_44: -6165551543614847690
+      Enemy_Oni_Spritesheet_5: -1112317174100836978
+      Enemy_Oni_Spritesheet_6: -575626734157394050
+      Enemy_Oni_Spritesheet_7: 4198920767354087070
+      Enemy_Oni_Spritesheet_8: -7041452297090308115
+      Enemy_Oni_Spritesheet_9: -5967328812938834131
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
