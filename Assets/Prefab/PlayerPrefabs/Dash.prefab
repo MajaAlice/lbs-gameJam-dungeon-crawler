@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: -1552895479860513881}
   m_Layer: 0
   m_Name: Dash
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
