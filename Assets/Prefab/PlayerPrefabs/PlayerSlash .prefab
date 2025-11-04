@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8810079289041039519}
   m_Layer: 0
   m_Name: 'PlayerSlash '
-  m_TagString: PlayerAttack
+  m_TagString: MeleePlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

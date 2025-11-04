@@ -5,16 +5,20 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public GameObject PlayerSlash;
+    public GameObject Dash;
+
     // Player Values -Lud
     public byte Sake; // Max 6
     public byte Blood; // Max 9
     public byte AttackDamage;
+    // Speed Values -Lud
+
     public float PlayerSpeed;
     public float CameraSpeed;
     
-    // Dash Values -Lud
+    // - Values -Lud
     [SerializeField] KeyCode dash = KeyCode.LeftShift;
-    float DashLenght = 1;
+    [SerializeField]float DashLenght = 1;
     bool CanDash = true;
     bool CanSlash = true;
     KeyCode Slash = KeyCode.Mouse0;
@@ -62,6 +66,9 @@ public class PlayerManager : MonoBehaviour
     IEnumerator DelayDash(float delayTime) // Does A Dash And Delays It -Lud & Maja
     {
         transform.position += transform.up * DashLenght;
+        Vector3 DashPosition = transform.position - transform.up * (DashLenght / 2);
+        GameObject TempDash = Instantiate(Dash, DashPosition, transform.rotation);
+        TempDash.transform.localScale = new Vector3(0.7f, DashLenght, 1);
         CanDash = false;
         yield return new WaitForSeconds(delayTime);
         CanDash = true;

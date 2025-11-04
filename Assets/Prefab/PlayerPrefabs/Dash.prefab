@@ -99,10 +99,9 @@ GameObject:
   - component: {fileID: 7595837341730296485}
   - component: {fileID: 8932172635171612973}
   - component: {fileID: 8664618208488547202}
-  - component: {fileID: -1552895479860513881}
   m_Layer: 0
   m_Name: Dash
-  m_TagString: PlayerAttack
+  m_TagString: MeleePlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -207,16 +206,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-1552895479860513881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6795609020376876277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d87bb99b1d8fa3449546a653b67ad95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Constraints: 4

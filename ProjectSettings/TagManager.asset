@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - PlayerAttack
+  - MeleePlayerAttack
+  - RangedPlayerAttack
   layers:
   - Default
   - TransparentFX
