@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -8,26 +9,30 @@ public class PlayerManager : MonoBehaviour
     public GameObject Dash;
 
     // Player Values -Lud
+    public short Health; // Base 7
     public byte Sake; // Max 6
     public byte Blood; // Max 9
     public byte AttackDamage;
+    public float MeleeDamageMult;
+    public float RangedDamageMult;
     // Speed Values -Lud
-
     public float PlayerSpeed;
     public float CameraSpeed;
-    
-    // - Values -Lud
-    [SerializeField] KeyCode dash = KeyCode.LeftShift;
-    [SerializeField]float DashLenght = 1;
+    public float DashLenght = 1;
+    Vector3 SlashSize;
+
+    // Bools -Lud
     bool CanDash = true;
     bool CanSlash = true;
-    KeyCode Slash = KeyCode.Mouse0;
 
-
+    // Movement -Lud
     [SerializeField] KeyCode Up = KeyCode.W;
     [SerializeField] KeyCode Down = KeyCode.S;
     [SerializeField] KeyCode Right = KeyCode.D;
     [SerializeField] KeyCode Left = KeyCode.A;
+    // Attacks -Lud
+    [SerializeField] KeyCode dash = KeyCode.LeftShift;
+    [SerializeField] KeyCode Slash = KeyCode.Mouse0;
 
     void Update()
     {
@@ -63,6 +68,15 @@ public class PlayerManager : MonoBehaviour
         Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -10), Time.deltaTime * CameraSpeed);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        EnemyManager Enemy = collision.GetComponent<EnemyManager>();
+        if (collision.CompareTag("MeleeEnemyAttack"))
+        {
+            Health -= Enemy.Damage;
+        }
+    }
+
     IEnumerator DelayDash(float delayTime) // Does A Dash And Delays It -Lud & Maja
     {
         transform.position += transform.up * DashLenght;
@@ -76,7 +90,8 @@ public class PlayerManager : MonoBehaviour
     IEnumerator DelaySlash(float delayTime)                     //handles the slash and it's cooldown -Maja
     {
         Vector3 SlashPosition = transform.position + transform.up * 2;
-        Instantiate(PlayerSlash, SlashPosition, transform.rotation);
+        GameObject TempSlash = Instantiate(PlayerSlash, SlashPosition, transform.rotation);
+        TempSlash.transform.localScale = SlashSize;
         CanSlash = false;
         yield return new WaitForSeconds(delayTime);
         CanSlash = true;

@@ -3,8 +3,8 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
 
-    public int Health;
-    public int MaxHealth;
+    public short Health;
+    public byte Damage;
     public float Speed;
 
     GameObject Player;
@@ -80,8 +80,7 @@ public class EnemyManager : MonoBehaviour
         }
         else if (collision.CompareTag("RangedPlayerAttack"))
         {
-            Debug.Log("i am lazy");
+            Health -= PlayerManager.AttackDamage;
         }
     }
-
 }
