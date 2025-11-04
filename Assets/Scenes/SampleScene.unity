@@ -262,9 +262,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 1
-  MaxHealth: 0
+  Damage: 1
   Speed: 1
-  Int: 1
+  EL: 0
   Res: 0
 --- !u!50 &159076275
 Rigidbody2D:
