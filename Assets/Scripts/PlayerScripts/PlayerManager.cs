@@ -59,15 +59,20 @@ public class PlayerManager : MonoBehaviour
             StartCoroutine(DelayDash(1));
         }
 
-        if (Input.GetKeyDown(Slash) && CanSlash)
-        {
-            StartCoroutine(DelaySlash(0.5f));
-        }
+
 
         // Switches Player into aim mode - Maja
         if (Input.GetKey(Aim))
         {
+            if (Input.GetKey(Slash))
+            {
+                RaycastHit2D HitInfo = Physics2D.Raycast(transform.position, new Vector3(0, 0, RotationZ));
+            }
             
+        }
+        else if (Input.GetKeyDown(Slash) && CanSlash)
+        {
+            StartCoroutine(DelaySlash(0.5f));
         }
 
     }

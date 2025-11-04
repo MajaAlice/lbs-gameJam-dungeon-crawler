@@ -154,6 +154,10 @@ MonoBehaviour:
   Damage: 1
   Speed: 1
   AimSpeed: 0
+  CanSlash: 1
+  SlashDelay: 0
+  SlashSize: {x: 0, y: 0, z: 0}
+  SlashDistance: 0
   EL: 0
   Res: 0
 --- !u!50 &159076275
