@@ -636,7 +636,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1828421215379397944, guid: 7975b5397478e034ebd51370161e9eb1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6249287
+      value: 5.13
       objectReference: {fileID: 0}
     - target: {fileID: 1828421215379397944, guid: 7975b5397478e034ebd51370161e9eb1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -715,6 +715,10 @@ PrefabInstance:
       propertyPath: PlayerBullet
       value: 
       objectReference: {fileID: 3441362091616073274, guid: 30d93a68764cfc14a81f480bf692ab84, type: 3}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: IFrameDuration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8973184404170480012, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

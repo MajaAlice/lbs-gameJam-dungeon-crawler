@@ -11,7 +11,7 @@ public class PlayerSlash : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         PlayerManagerBuh = Player.GetComponent<PlayerManager>();
-        Destroy(gameObject, 0.1f); //destroys the game object - Maja
+        Destroy(gameObject, 0.2f); //destroys the game object - Maja
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

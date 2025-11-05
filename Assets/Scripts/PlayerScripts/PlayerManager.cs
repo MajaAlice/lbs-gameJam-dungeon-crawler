@@ -19,6 +19,8 @@ public class PlayerManager : MonoBehaviour
     public float DashDelay = 1f;
     public float MeleeDamageMult = 1;
     public float RangedDamageMult = 1;
+    public float OnHitIFrameDuration = 0.1f;
+    public float DashIframeDuration = 0.1f;
    
     //These variables are controlled by the Player Slash script
     public int MagSize = 6;
@@ -37,6 +39,7 @@ public class PlayerManager : MonoBehaviour
     // Bools -Lud
     bool CanDash = true;
     bool CanSlash = true;
+    bool CanBeHurt = true;
 
     // Movement Keys -Lud
     [SerializeField] KeyCode Up = KeyCode.W;
@@ -68,6 +71,7 @@ public class PlayerManager : MonoBehaviour
 
         if (Input.GetKeyDown(dash) && CanDash)
         {
+            StartCoroutine(IFrames(DashIframeDuration));
             StartCoroutine(DelayDash(DashDelay));
         }
 
@@ -97,10 +101,11 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        if (collision.CompareTag("MeleeEnemyAttack"))
+        //Takes Damage and enables Iframes
+        if (collision.CompareTag("MeleeEnemyAttack") && CanBeHurt || collision.CompareTag("RangedEnemyAttack") && CanBeHurt)
         {
             Health--;
+            StartCoroutine(IFrames(OnHitIFrameDuration));
         }
     }
 
@@ -126,5 +131,10 @@ public class PlayerManager : MonoBehaviour
         BulletsGrabbed = 0;
         if (CurrentMag > MagSize) { CurrentMag = MagSize; }
     }
-
+    IEnumerator IFrames (float delayTime)                     //momenterily makes the player invincible
+    {
+        CanBeHurt = false;
+        yield return new WaitForSeconds(delayTime);
+        CanBeHurt = true;
+    }
 }
