@@ -62,7 +62,7 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.TankMelee:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash)
+                if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash && Distance > 1)
                 {
                     StartCoroutine(DelaySlash(SlashDelay));
                 }
@@ -77,6 +77,10 @@ public class EnemyManager : MonoBehaviour
                 break;
             default:
                 break;
+        }
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
