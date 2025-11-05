@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public float BulletSpeed = 5;
+    public PlayerManager PlayerManager;
+    public GameObject Player;
+
     void Start()
     {
-        
+        Player = GameObject.FindGameObjectWithTag("Player");
+        PlayerManager = Player.GetComponent<PlayerManager>();
     }
 
-    // Update is called once per frame
+    //bullet speed is controlled by the PlayerManager
     void Update()
     {
-        transform.position += transform.up * BulletSpeed * Time.deltaTime;
+        transform.position += transform.up * PlayerManager.BulletSpeed * Time.deltaTime;
     }
 }
