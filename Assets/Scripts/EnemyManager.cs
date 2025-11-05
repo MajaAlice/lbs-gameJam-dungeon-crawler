@@ -31,6 +31,7 @@ public class EnemyManager : MonoBehaviour
         MuskeetRanged,
         KatanaMelee,
         TankMelee,
+        DashMelee,
     }
     public enum EnemyResistances
     {
@@ -59,6 +60,20 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.None:
                 Debug.Log("Value Missing");
                 break;
+            case EnemyLogic.KatanaMelee:
+
+                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
+                if (CanSlash && Distance > 1)
+                {
+                    StartCoroutine(DelaySlash(AttackDelay));
+                }
+                // Moves Player So Long As Distance Is Less Then One -Lud
+                if (Distance < SlashDistance + SlashSize.y)
+                {
+                    MoveEnemyTowardsPlayer();
+                }
+
+                break;
             case EnemyLogic.TankMelee:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
@@ -67,7 +82,22 @@ public class EnemyManager : MonoBehaviour
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if(Distance > SlashDistance + SlashSize.y)
+                if(Distance < (SlashDistance + SlashSize.y))
+                {
+                    MoveEnemyTowardsPlayer();
+                }
+
+                break;
+
+            case EnemyLogic.DashMelee:
+
+                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
+                if (CanSlash && Distance > 1)
+                {
+                    StartCoroutine(DelaySlash(AttackDelay));
+                }
+                // Moves Player So Long As Distance Is Less Then One -Lud
+                if (Distance < SlashDistance + SlashSize.y)
                 {
                     MoveEnemyTowardsPlayer();
                 }
