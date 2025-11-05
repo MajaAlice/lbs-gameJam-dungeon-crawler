@@ -62,7 +62,7 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.TankMelee:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash)
+                if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash && Distance > 1)
                 {
                     StartCoroutine(DelaySlash(SlashDelay));
                 }
@@ -78,10 +78,10 @@ public class EnemyManager : MonoBehaviour
             default:
                 break;
         }
-        //if (PlayerManager.HitInfo == gameObject)
-        //{
-        //    Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.RangedDamageMult);
-        //}
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void MoveEnemyTowardsPlayer()
@@ -114,7 +114,11 @@ public class EnemyManager : MonoBehaviour
         }
         else if (collision.CompareTag("RangedPlayerAttack"))
         {
-            Health -= PlayerManager.AttackDamage;
+            Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.RangedDamageMult);
+            if (Health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

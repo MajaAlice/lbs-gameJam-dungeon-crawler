@@ -1,0 +1,2015 @@
+fileFormatVersion: 2
+guid: 5164e1f786f57ad419cce9297db7d088
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1794637865529295939
+    second: Enemy_Musketeer_Spritesheet_0
+  - first:
+      213: 7901798977097220245
+    second: Enemy_Musketeer_Spritesheet_1
+  - first:
+      213: 4501100605055757291
+    second: Enemy_Musketeer_Spritesheet_2
+  - first:
+      213: -696861548372991694
+    second: Enemy_Musketeer_Spritesheet_3
+  - first:
+      213: -7626912716620253413
+    second: Enemy_Musketeer_Spritesheet_4
+  - first:
+      213: 8894081178994236559
+    second: Enemy_Musketeer_Spritesheet_5
+  - first:
+      213: -5752362762620443088
+    second: Enemy_Musketeer_Spritesheet_6
+  - first:
+      213: -1778361624447982521
+    second: Enemy_Musketeer_Spritesheet_7
+  - first:
+      213: 6328400864003652624
+    second: Enemy_Musketeer_Spritesheet_8
+  - first:
+      213: -8345290938345899811
+    second: Enemy_Musketeer_Spritesheet_9
+  - first:
+      213: 978812056047504084
+    second: Enemy_Musketeer_Spritesheet_10
+  - first:
+      213: -6721679629272654764
+    second: Enemy_Musketeer_Spritesheet_11
+  - first:
+      213: 7366124184408572135
+    second: Enemy_Musketeer_Spritesheet_12
+  - first:
+      213: -2086851490152151261
+    second: Enemy_Musketeer_Spritesheet_13
+  - first:
+      213: 5759037342907654667
+    second: Enemy_Musketeer_Spritesheet_14
+  - first:
+      213: -8101096747595476388
+    second: Enemy_Musketeer_Spritesheet_15
+  - first:
+      213: -7862720605962934569
+    second: Enemy_Musketeer_Spritesheet_16
+  - first:
+      213: 489221345109896602
+    second: Enemy_Musketeer_Spritesheet_17
+  - first:
+      213: -3906644625305829474
+    second: Enemy_Musketeer_Spritesheet_18
+  - first:
+      213: -7008746555457849827
+    second: Enemy_Musketeer_Spritesheet_19
+  - first:
+      213: -5504436809874256995
+    second: Enemy_Musketeer_Spritesheet_20
+  - first:
+      213: -567138003065000801
+    second: Enemy_Musketeer_Spritesheet_21
+  - first:
+      213: -3331139743608507858
+    second: Enemy_Musketeer_Spritesheet_22
+  - first:
+      213: 7288349485274481993
+    second: Enemy_Musketeer_Spritesheet_23
+  - first:
+      213: 8478778289381712308
+    second: Enemy_Musketeer_Spritesheet_24
+  - first:
+      213: 6051436859203152973
+    second: Enemy_Musketeer_Spritesheet_25
+  - first:
+      213: -2903815199597258184
+    second: Enemy_Musketeer_Spritesheet_26
+  - first:
+      213: -3996485719920095949
+    second: Enemy_Musketeer_Spritesheet_27
+  - first:
+      213: -4110839649872163226
+    second: Enemy_Musketeer_Spritesheet_28
+  - first:
+      213: 1491527067894567992
+    second: Enemy_Musketeer_Spritesheet_29
+  - first:
+      213: -9141236730856014187
+    second: Enemy_Musketeer_Spritesheet_30
+  - first:
+      213: -6777477766310464686
+    second: Enemy_Musketeer_Spritesheet_31
+  - first:
+      213: -1891907086256241084
+    second: Enemy_Musketeer_Spritesheet_32
+  - first:
+      213: 6143193602420529158
+    second: Enemy_Musketeer_Spritesheet_33
+  - first:
+      213: 5724049268259962149
+    second: Enemy_Musketeer_Spritesheet_34
+  - first:
+      213: 3692566707516837975
+    second: Enemy_Musketeer_Spritesheet_35
+  - first:
+      213: -690312852923615600
+    second: Enemy_Musketeer_Spritesheet_36
+  - first:
+      213: -5536685075674151906
+    second: Enemy_Musketeer_Spritesheet_37
+  - first:
+      213: -2602409016343396538
+    second: Enemy_Musketeer_Spritesheet_38
+  - first:
+      213: -7281635296018012762
+    second: Enemy_Musketeer_Spritesheet_39
+  - first:
+      213: 8708439423785542606
+    second: Enemy_Musketeer_Spritesheet_40
+  - first:
+      213: -6512798500490374258
+    second: Enemy_Musketeer_Spritesheet_41
+  - first:
+      213: -7512109009239852212
+    second: Enemy_Musketeer_Spritesheet_42
+  - first:
+      213: 5772657258530756093
+    second: Enemy_Musketeer_Spritesheet_43
+  - first:
+      213: 4860935328718283550
+    second: Enemy_Musketeer_Spritesheet_44
+  - first:
+      213: -8535932339189921292
+    second: Enemy_Musketeer_Spritesheet_45
+  - first:
+      213: -26640978322632667
+    second: Enemy_Musketeer_Spritesheet_46
+  - first:
+      213: -1159380024958067001
+    second: Enemy_Musketeer_Spritesheet_47
+  - first:
+      213: -5988507754174601306
+    second: Enemy_Musketeer_Spritesheet_48
+  - first:
+      213: -2340615501484179001
+    second: Enemy_Musketeer_Spritesheet_49
+  - first:
+      213: 3098767503376456509
+    second: Enemy_Musketeer_Spritesheet_50
+  - first:
+      213: -4133051863564631995
+    second: Enemy_Musketeer_Spritesheet_51
+  - first:
+      213: -1306161644039383391
+    second: Enemy_Musketeer_Spritesheet_52
+  - first:
+      213: -53632880081901320
+    second: Enemy_Musketeer_Spritesheet_53
+  - first:
+      213: 8182769566236953016
+    second: Enemy_Musketeer_Spritesheet_54
+  - first:
+      213: 6087510445180031043
+    second: Enemy_Musketeer_Spritesheet_55
+  - first:
+      213: -3109219219841187268
+    second: Enemy_Musketeer_Spritesheet_56
+  - first:
+      213: -8466169939323694365
+    second: Enemy_Musketeer_Spritesheet_57
+  - first:
+      213: -8361583503127817311
+    second: Enemy_Musketeer_Spritesheet_58
+  - first:
+      213: 7209341749225865930
+    second: Enemy_Musketeer_Spritesheet_59
+  - first:
+      213: 4486752758927412079
+    second: Enemy_Musketeer_Spritesheet_60
+  - first:
+      213: 3772730130955943791
+    second: Enemy_Musketeer_Spritesheet_61
+  - first:
+      213: 8216015172087380525
+    second: Enemy_Musketeer_Spritesheet_62
+  - first:
+      213: 4531057116280502400
+    second: Enemy_Musketeer_Spritesheet_63
+  - first:
+      213: 1746428837960769796
+    second: Enemy_Musketeer_Spritesheet_64
+  - first:
+      213: -8608145645622847809
+    second: Enemy_Musketeer_Spritesheet_65
+  - first:
+      213: -4509721538167169751
+    second: Enemy_Musketeer_Spritesheet_66
+  - first:
+      213: -8781566550641898848
+    second: Enemy_Musketeer_Spritesheet_67
+  - first:
+      213: -9033168901537298933
+    second: Enemy_Musketeer_Spritesheet_68
+  - first:
+      213: 1880556721339375435
+    second: Enemy_Musketeer_Spritesheet_69
+  - first:
+      213: 8898437408040589716
+    second: Enemy_Musketeer_Spritesheet_70
+  - first:
+      213: -4026992153627989800
+    second: Enemy_Musketeer_Spritesheet_71
+  - first:
+      213: -6069968336479802546
+    second: Enemy_Musketeer_Spritesheet_72
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 234
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344c65b51a5d7e810800000000000000
+      internalID: 1794637865529295939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 248
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590cc6cdd44d8ad60800000000000000
+      internalID: 7901798977097220245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 248
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebe4a6072f177e30800000000000000
+      internalID: 4501100605055757291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 217
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23169972d104456f0800000000000000
+      internalID: -696861548372991694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 217
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17b0f81b43c72690800000000000000
+      internalID: -7626912716620253413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 217
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c507d95bf1e6b70800000000000000
+      internalID: 8894081178994236559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 217
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036e2d27b808b20b0800000000000000
+      internalID: -5752362762620443088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 201
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7446794568df157e0800000000000000
+      internalID: -1778361624447982521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 202
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c76377e0ff2d750800000000000000
+      internalID: 6328400864003652624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 201
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd83b985b129f2c80800000000000000
+      internalID: -8345290938345899811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 202
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dac4960160759d00800000000000000
+      internalID: 978812056047504084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 185
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c593b7dfbc7b2a0800000000000000
+      internalID: -6721679629272654764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e046171beab93660800000000000000
+      internalID: 7366124184408572135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 185
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3278c7650a30a03e0800000000000000
+      internalID: -2086851490152151261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 185
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02683063f53cef40800000000000000
+      internalID: 5759037342907654667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 170
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52df74fd6f139f80800000000000000
+      internalID: -8101096747595476388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 170
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d66f61744102e290800000000000000
+      internalID: -7862720605962934569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 170
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d60dba8301ac600800000000000000
+      internalID: 489221345109896602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 170
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ff4fc596fc8c9c0800000000000000
+      internalID: -3906644625305829474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 153
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d163139442eebbe90800000000000000
+      internalID: -7008746555457849827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 153
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b4cda92ef4c93b0800000000000000
+      internalID: -5504436809874256995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 153
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9cafa4bdfe1128f0800000000000000
+      internalID: -567138003065000801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 153
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2277056d0a65c1d0800000000000000
+      internalID: -3331139743608507858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 138
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945cfa4dd3b652560800000000000000
+      internalID: 7288349485274481993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 138
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b124e38eebaaa570800000000000000
+      internalID: 8478778289381712308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 138
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c6285f2c50bf350800000000000000
+      internalID: 6051436859203152973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 138
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a10a6067393b7d0800000000000000
+      internalID: -2903815199597258184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 106
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33dcd3a7961a988c0800000000000000
+      internalID: -3996485719920095949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 106
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e47cc5e1d53f6c0800000000000000
+      internalID: -4110839649872163226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 106
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8345cbe37f7f2b410800000000000000
+      internalID: 1491527067894567992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 121
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ef29920adc32180800000000000000
+      internalID: -9141236730856014187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 121
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253f4f151ef81f1a0800000000000000
+      internalID: -6777477766310464686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 121
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44607af57889eb5e0800000000000000
+      internalID: -1891907086256241084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 121
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6085aba8802014550800000000000000
+      internalID: 6143193602420529158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 121
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d387f6b78ef6f40800000000000000
+      internalID: 5724049268259962149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 106
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75099fe3bd1ae3330800000000000000
+      internalID: 3692566707516837975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096f9912e148b66f0800000000000000
+      internalID: -690312852923615600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e144c3f124eb923b0800000000000000
+      internalID: -5536685075674151906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 106
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ff39ca9c262ebd0800000000000000
+      internalID: -2602409016343396538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 106
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a566ec274f62fa90800000000000000
+      internalID: -7281635296018012762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 106
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3aeb244879ad870800000000000000
+      internalID: 8708439423785542606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 106
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8313942544ed95a0800000000000000
+      internalID: -6512798500490374258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b3f3e28a0afb790800000000000000
+      internalID: -7512109009239852212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df55ec811399c1050800000000000000
+      internalID: 5772657258530756093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1366685de2857340800000000000000
+      internalID: 4860935328718283550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9c0d743c64a8980800000000000000
+      internalID: -8535932339189921292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5205c9edb2a51aff0800000000000000
+      internalID: -26640978322632667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ced0bc820e09efe0800000000000000
+      internalID: -1159380024958067001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a720c11deb84eca0800000000000000
+      internalID: -5988507754174601306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1434e3a96748fd0800000000000000
+      internalID: -2340615501484179001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b174850a8010b20800000000000000
+      internalID: 3098767503376456509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540c6f95a3374a6c0800000000000000
+      internalID: -4133051863564631995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6dac3b7e49fdde0800000000000000
+      internalID: -1306161644039383391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8ef620e25714ff0800000000000000
+      internalID: -53632880081901320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b94e6af0990f8170800000000000000
+      internalID: 8182769566236953016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3409f633f7e2b7450800000000000000
+      internalID: 6087510445180031043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 106
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c328c88c795d9d4d0800000000000000
+      internalID: -3109219219841187268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2558ebb4f128a80800000000000000
+      internalID: -8466169939323694365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 106
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3dc400b10b5fb80800000000000000
+      internalID: -8361583503127817311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 106
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2400bcf1abc0460800000000000000
+      internalID: 7209341749225865930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 74
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b4fd6ccd5244e30800000000000000
+      internalID: 4486752758927412079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 74
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fba09b01e6b5430800000000000000
+      internalID: 3772730130955943791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 89
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2afc79c446250270800000000000000
+      internalID: 8216015172087380525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 89
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088b7e0d07c81ee30800000000000000
+      internalID: 4531057116280502400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 57
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401662076cf8c3810800000000000000
+      internalID: 1746428837960769796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 42
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb613d9a429b98880800000000000000
+      internalID: -8608145645622847809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 42
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d1e9197204a61c0800000000000000
+      internalID: -4509721538167169751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 25
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa8989bfbb912680800000000000000
+      internalID: -8781566550641898848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 25
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0683cb6ebcb3a280800000000000000
+      internalID: -9033168901537298933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 25
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f186bdf54191a10800000000000000
+      internalID: 1880556721339375435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 25
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4999e4a3da99d7b70800000000000000
+      internalID: 8898437408040589716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 10
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8e7b1e8ff3d18c0800000000000000
+      internalID: -4026992153627989800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Musketeer_Spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 10
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ba04245f323cba0800000000000000
+      internalID: -6069968336479802546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Enemy_Musketeer_Spritesheet_0: 1794637865529295939
+      Enemy_Musketeer_Spritesheet_1: 7901798977097220245
+      Enemy_Musketeer_Spritesheet_10: 978812056047504084
+      Enemy_Musketeer_Spritesheet_11: -6721679629272654764
+      Enemy_Musketeer_Spritesheet_12: 7366124184408572135
+      Enemy_Musketeer_Spritesheet_13: -2086851490152151261
+      Enemy_Musketeer_Spritesheet_14: 5759037342907654667
+      Enemy_Musketeer_Spritesheet_15: -8101096747595476388
+      Enemy_Musketeer_Spritesheet_16: -7862720605962934569
+      Enemy_Musketeer_Spritesheet_17: 489221345109896602
+      Enemy_Musketeer_Spritesheet_18: -3906644625305829474
+      Enemy_Musketeer_Spritesheet_19: -7008746555457849827
+      Enemy_Musketeer_Spritesheet_2: 4501100605055757291
+      Enemy_Musketeer_Spritesheet_20: -5504436809874256995
+      Enemy_Musketeer_Spritesheet_21: -567138003065000801
+      Enemy_Musketeer_Spritesheet_22: -3331139743608507858
+      Enemy_Musketeer_Spritesheet_23: 7288349485274481993
+      Enemy_Musketeer_Spritesheet_24: 8478778289381712308
+      Enemy_Musketeer_Spritesheet_25: 6051436859203152973
+      Enemy_Musketeer_Spritesheet_26: -2903815199597258184
+      Enemy_Musketeer_Spritesheet_27: -3996485719920095949
+      Enemy_Musketeer_Spritesheet_28: -4110839649872163226
+      Enemy_Musketeer_Spritesheet_29: 1491527067894567992
+      Enemy_Musketeer_Spritesheet_3: -696861548372991694
+      Enemy_Musketeer_Spritesheet_30: -9141236730856014187
+      Enemy_Musketeer_Spritesheet_31: -6777477766310464686
+      Enemy_Musketeer_Spritesheet_32: -1891907086256241084
+      Enemy_Musketeer_Spritesheet_33: 6143193602420529158
+      Enemy_Musketeer_Spritesheet_34: 5724049268259962149
+      Enemy_Musketeer_Spritesheet_35: 3692566707516837975
+      Enemy_Musketeer_Spritesheet_36: -690312852923615600
+      Enemy_Musketeer_Spritesheet_37: -5536685075674151906
+      Enemy_Musketeer_Spritesheet_38: -2602409016343396538
+      Enemy_Musketeer_Spritesheet_39: -7281635296018012762
+      Enemy_Musketeer_Spritesheet_4: -7626912716620253413
+      Enemy_Musketeer_Spritesheet_40: 8708439423785542606
+      Enemy_Musketeer_Spritesheet_41: -6512798500490374258
+      Enemy_Musketeer_Spritesheet_42: -7512109009239852212
+      Enemy_Musketeer_Spritesheet_43: 5772657258530756093
+      Enemy_Musketeer_Spritesheet_44: 4860935328718283550
+      Enemy_Musketeer_Spritesheet_45: -8535932339189921292
+      Enemy_Musketeer_Spritesheet_46: -26640978322632667
+      Enemy_Musketeer_Spritesheet_47: -1159380024958067001
+      Enemy_Musketeer_Spritesheet_48: -5988507754174601306
+      Enemy_Musketeer_Spritesheet_49: -2340615501484179001
+      Enemy_Musketeer_Spritesheet_5: 8894081178994236559
+      Enemy_Musketeer_Spritesheet_50: 3098767503376456509
+      Enemy_Musketeer_Spritesheet_51: -4133051863564631995
+      Enemy_Musketeer_Spritesheet_52: -1306161644039383391
+      Enemy_Musketeer_Spritesheet_53: -53632880081901320
+      Enemy_Musketeer_Spritesheet_54: 8182769566236953016
+      Enemy_Musketeer_Spritesheet_55: 6087510445180031043
+      Enemy_Musketeer_Spritesheet_56: -3109219219841187268
+      Enemy_Musketeer_Spritesheet_57: -8466169939323694365
+      Enemy_Musketeer_Spritesheet_58: -8361583503127817311
+      Enemy_Musketeer_Spritesheet_59: 7209341749225865930
+      Enemy_Musketeer_Spritesheet_6: -5752362762620443088
+      Enemy_Musketeer_Spritesheet_60: 4486752758927412079
+      Enemy_Musketeer_Spritesheet_61: 3772730130955943791
+      Enemy_Musketeer_Spritesheet_62: 8216015172087380525
+      Enemy_Musketeer_Spritesheet_63: 4531057116280502400
+      Enemy_Musketeer_Spritesheet_64: 1746428837960769796
+      Enemy_Musketeer_Spritesheet_65: -8608145645622847809
+      Enemy_Musketeer_Spritesheet_66: -4509721538167169751
+      Enemy_Musketeer_Spritesheet_67: -8781566550641898848
+      Enemy_Musketeer_Spritesheet_68: -9033168901537298933
+      Enemy_Musketeer_Spritesheet_69: 1880556721339375435
+      Enemy_Musketeer_Spritesheet_7: -1778361624447982521
+      Enemy_Musketeer_Spritesheet_70: 8898437408040589716
+      Enemy_Musketeer_Spritesheet_71: -4026992153627989800
+      Enemy_Musketeer_Spritesheet_72: -6069968336479802546
+      Enemy_Musketeer_Spritesheet_8: 6328400864003652624
+      Enemy_Musketeer_Spritesheet_9: -8345290938345899811
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
