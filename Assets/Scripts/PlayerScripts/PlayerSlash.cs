@@ -17,10 +17,10 @@ public class PlayerSlash : MonoBehaviour
     {
         if (collision.CompareTag("MeleeEnemyAttack"))
         {
-
+            collision.gameObject.tag = "MeleePlayerAttack";
         }
 
-        //Adds bullets to the magazine per bullet parried with a cap - Maja
+        //Adds bullets to the magazine per bullet parried with a cap and bounces bullets at the cursor with  - Maja
         if (collision.CompareTag("RangedEnemyAttack"))
         {
             if (PlayerManagerBuh.CurrentMag < PlayerManagerBuh.MagSize && PlayerManagerBuh.BulletsGrabbed < PlayerManagerBuh.MaxBulletGrab)

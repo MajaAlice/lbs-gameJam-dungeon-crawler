@@ -97,10 +97,10 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyManager EnemyManager = collision.GetComponent<EnemyManager>();
+        
         if (collision.CompareTag("MeleeEnemyAttack"))
         {
-            Health -= EnemyManager.Damage;
+            Health--;
         }
     }
 
