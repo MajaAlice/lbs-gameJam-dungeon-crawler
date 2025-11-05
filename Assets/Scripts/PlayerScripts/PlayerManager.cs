@@ -7,7 +7,6 @@ public class PlayerManager : MonoBehaviour
 {
     public GameObject PlayerSlash;
     public GameObject Dash;
-    public GameObject PlayerBullet;
 
     // Player Values -Lud
     public int Health = 7; // Base 7
@@ -41,9 +40,6 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] KeyCode Slash = KeyCode.Mouse0;
     [SerializeField] KeyCode Aim = KeyCode.Mouse1;
 
-    //raycast variables
-    public RaycastHit2D HitInfo;
-
     void Update()
     {
         // Player Rotation To Mouse -Lud
@@ -67,19 +63,18 @@ public class PlayerManager : MonoBehaviour
             StartCoroutine(DelayDash(1));
         }
 
+        
 
-
-        // Switches Player between aim mode - Maja
+        // Switches Player into aim mode - Maja
         if (Input.GetKey(Aim))
         {
-            //Spawns bullets - Maja
-            if (Input.GetKeyDown(Slash))
+            if (Input.GetKey(Slash))
             {
                 Instantiate(PlayerBullet, transform.position, transform.rotation);
                 if (CurrentMag != 0)CurrentMag--;
             }
+            
         }
-        //slashy slash - Maja
         else if (Input.GetKeyDown(Slash) && CanSlash)
         {
             StartCoroutine(DelaySlash(0.5f));
