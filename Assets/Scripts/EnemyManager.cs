@@ -15,7 +15,7 @@ public class EnemyManager : MonoBehaviour
     GameObject Player;
     PlayerManager PlayerManager;
 
-    GameObject Slash;
+    public GameObject Slash;
     public bool CanSlash = true;
     public float SlashDelay;
     public Vector3 SlashSize;
@@ -62,19 +62,34 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.TankMelee:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash && Distance > 1)
+                if (CanSlash && Distance > 1)
                 {
                     StartCoroutine(DelaySlash(SlashDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if(Distance > 1)
+                if(Distance > SlashDistance + SlashSize.y)
                 {
                     MoveEnemyTowardsPlayer();
                 }
 
                 break;
             case EnemyLogic.MuskeetRanged:
-                break;
+
+                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
+                if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash && Distance > 1)
+                {
+                    StartCoroutine(DelaySlash(SlashDelay));
+                }
+                // Moves Player So Long As Distance Is Less Then One -Lud
+                if (Distance < 12)
+                {
+                    MoveEnemyAwayFromPlayer();
+                }
+                else if(Distance < 15)
+                {
+                    MoveEnemyTowardsPlayer();
+                }
+                    break;
             default:
                 break;
         }
@@ -86,16 +101,20 @@ public class EnemyManager : MonoBehaviour
 
     void MoveEnemyTowardsPlayer()
     {
-        transform.position = Vector3.Lerp(Player.transform.position, transform.position, Speed * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, Player.transform.position, Speed * Time.deltaTime);
+    }
 
+    void MoveEnemyAwayFromPlayer()
+    {
+        transform.position = Vector3.Lerp(transform.position, -Player.transform.position, Speed * Time.deltaTime);
     }
 
     IEnumerator DelaySlash(float delayTime)
     {
+        CanSlash = false;
         Vector3 SlashPosition = transform.position + transform.up * SlashDistance;
         GameObject TempSlash = Instantiate(Slash, SlashPosition, transform.rotation);
         TempSlash.transform.localScale = SlashSize;
-        CanSlash = false;
         yield return new WaitForSeconds(delayTime);
         CanSlash = true;
     }
