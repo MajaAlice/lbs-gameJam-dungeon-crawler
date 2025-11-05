@@ -99,12 +99,14 @@ public class EnemyManager : MonoBehaviour
 
     void MoveEnemyTowardsPlayer() // With Lerp Function -Lud
     {
-        transform.position = Vector3.Lerp(transform.position, Player.transform.position, Speed * Time.deltaTime);
+        Vector3 PlayerOffset = Player.transform.position - transform.position;
+        transform.position = Vector3.Lerp(transform.position, transform.position + PlayerOffset, Speed * Time.deltaTime);
     }
 
     void MoveEnemyAwayFromPlayer() // With Lerp Function -Lud
     {
-        transform.position = Vector3.Lerp(transform.position, -Player.transform.position, Speed * Time.deltaTime);
+        Vector3 PlayerOffset = Player.transform.position - transform.position;
+        transform.position = Vector3.Lerp(transform.position, transform.position - PlayerOffset, Speed * Time.deltaTime);
     }
 
     IEnumerator DelaySlash(float delayTime)
