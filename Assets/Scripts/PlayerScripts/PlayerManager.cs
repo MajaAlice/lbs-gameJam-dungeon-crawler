@@ -14,17 +14,24 @@ public class PlayerManager : MonoBehaviour
     public byte Sake = 0; // Max 6
     public byte Blood = 0; // Max 9
     public byte AttackDamage = 1;
+    public float SlashDistance = 1;
+    public float SlashDelay = 0.5f;
+    public float DashDelay = 1f;
     public float MeleeDamageMult = 1;
     public float RangedDamageMult = 1;
+   
+    //These variables are controlled by the Player Slash script
     public int MagSize = 6;
     public int CurrentMag = 6;
+    public int MaxBulletGrab = 4;
+    public int BulletsGrabbed = 0;
 
     // Speed Values -Lud
     public float PlayerSpeed = 10;
     public float CameraSpeed = 5;
     public float DashLenght = 1;
     public Vector3 SlashSize = new Vector3(2,2,1);
-    public float SlashDistance = 1;
+
     public float BulletSpeed = 10;
 
     // Bools -Lud
@@ -61,7 +68,7 @@ public class PlayerManager : MonoBehaviour
 
         if (Input.GetKeyDown(dash) && CanDash)
         {
-            StartCoroutine(DelayDash(1));
+            StartCoroutine(DelayDash(DashDelay));
         }
 
         
@@ -69,16 +76,16 @@ public class PlayerManager : MonoBehaviour
         // Switches Player into aim mode - Maja
         if (Input.GetKey(Aim))
         {
-            if (Input.GetKey(Slash))
+            if (Input.GetKeyDown(Slash) && CurrentMag > 0)
             {
                 Instantiate(PlayerBullet, transform.position, transform.rotation);
-                if (CurrentMag != 0)CurrentMag--;
+                CurrentMag--;
             }
             
         }
         else if (Input.GetKeyDown(Slash) && CanSlash)
         {
-            StartCoroutine(DelaySlash(0.5f));
+            StartCoroutine(DelaySlash(SlashDelay));
         }
 
     }
@@ -107,7 +114,7 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
         CanDash = true;
     }
-    IEnumerator DelaySlash(float delayTime)                     //handles the slash and it's cooldown -Maja
+    IEnumerator DelaySlash(float delayTime)                     //handles the slash and it's cooldown and parry reloading -Maja
     {
         Vector3 SlashPosition = transform.position + transform.up * SlashDistance;
         GameObject TempSlash = Instantiate(PlayerSlash, SlashPosition, transform.rotation);
@@ -115,5 +122,9 @@ public class PlayerManager : MonoBehaviour
         CanSlash = false;
         yield return new WaitForSeconds(delayTime);
         CanSlash = true;
+        CurrentMag += BulletsGrabbed;
+        BulletsGrabbed = 0;
+        if (CurrentMag > MagSize) { CurrentMag = MagSize; }
     }
+
 }
