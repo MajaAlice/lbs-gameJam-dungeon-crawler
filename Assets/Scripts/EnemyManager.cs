@@ -78,10 +78,6 @@ public class EnemyManager : MonoBehaviour
             default:
                 break;
         }
-        //if (PlayerManager.HitInfo == gameObject)
-        //{
-        //    Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.RangedDamageMult);
-        //}
     }
 
     void MoveEnemyTowardsPlayer()
@@ -114,7 +110,11 @@ public class EnemyManager : MonoBehaviour
         }
         else if (collision.CompareTag("RangedPlayerAttack"))
         {
-            Health -= PlayerManager.AttackDamage;
+            Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.RangedDamageMult);
+            if (Health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

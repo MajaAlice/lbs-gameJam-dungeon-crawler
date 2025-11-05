@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour
 {
     public GameObject PlayerSlash;
     public GameObject Dash;
+    public GameObject PlayerBullet;
 
     // Player Values -Lud
     public int Health = 7; // Base 7
@@ -67,12 +68,13 @@ public class PlayerManager : MonoBehaviour
         // Switches Player between aim mode - Maja
         if (Input.GetKey(Aim))
         {
-            //controls the shooting - Maja
-            //if (Input.GetKey(Slash))
-            //{
-            //    var HitInfo = Physics2D.Raycast(transform.position, transform.up);
-            //}
+            //Spawns bullets - Maja
+            if (Input.GetKeyDown(Slash))
+            {
+                Instantiate(PlayerBullet, transform.position, transform.rotation);
+            }
         }
+        //slashy slash - Maja
         else if (Input.GetKeyDown(Slash) && CanSlash)
         {
             StartCoroutine(DelaySlash(0.5f));
