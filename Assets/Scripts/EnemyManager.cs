@@ -80,12 +80,14 @@ public class EnemyManager : MonoBehaviour
                 {
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
+
+                Debug.Log("Player Distance: " + Distance);
                 // Moves Player So Long As Distance Is Less Then One -Lud
                 if (Distance < 12)
                 {
                     MoveEnemyAwayFromPlayer();
                 }
-                else if(Distance > 15)
+                else if (Distance > 15)
                 {
                     MoveEnemyTowardsPlayer();
                 }
@@ -100,13 +102,15 @@ public class EnemyManager : MonoBehaviour
     void MoveEnemyTowardsPlayer() // With Lerp Function -Lud
     {
         Vector3 PlayerOffset = Player.transform.position - transform.position;
+        Debug.Log("Player Offset: " + PlayerOffset);
         transform.position = Vector3.Lerp(transform.position, transform.position + PlayerOffset, Speed * Time.deltaTime);
     }
 
     void MoveEnemyAwayFromPlayer() // With Lerp Function -Lud
     {
         Vector3 PlayerOffset = Player.transform.position - transform.position;
-        transform.position = Vector3.Lerp(transform.position, transform.position - PlayerOffset, Speed * Time.deltaTime);
+        Debug.Log("Player Offset: " + PlayerOffset);
+        transform.position = Vector3.Lerp(transform.position, transform.position - PlayerOffset * 2, Speed * Time.deltaTime);
     }
 
     IEnumerator DelaySlash(float delayTime)
