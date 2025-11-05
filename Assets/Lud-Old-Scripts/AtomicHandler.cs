@@ -69,6 +69,7 @@ public class AtomicHandler : MonoBehaviour
                 float Distance = Direction.magnitude;
                 Direction = Direction.normalized;
 
+
                 float GravityForce = GravitationalConstant * (MassA * MassB / Mathf.Pow(Distance, 2));
                 TotalForce += Direction * GravityForce;
 
