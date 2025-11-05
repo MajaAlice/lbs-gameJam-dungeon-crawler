@@ -94,23 +94,27 @@ public class EnemyManager : MonoBehaviour
                     break;
 
             default:
-                Debug.Log("WTF have you done????");
+                Debug.Log("What The Fuck have you done????");
                 break;
         }
     }
 
     void MoveEnemyTowardsPlayer() // With Lerp Function -Lud
     {
-        Vector3 PlayerOffset = Player.transform.position - transform.position;
-        Debug.Log("Player Offset: " + PlayerOffset);
-        transform.position = Vector3.Lerp(transform.position, transform.position + PlayerOffset, Speed * Time.deltaTime);
+        Vector3 Direction = Player.transform.position - transform.position;
+        float Distance = Direction.magnitude;
+        Direction = Direction.normalized;
+
+        transform.position += Direction * (Speed * Time.deltaTime);
     }
 
     void MoveEnemyAwayFromPlayer() // With Lerp Function -Lud
     {
-        Vector3 PlayerOffset = Player.transform.position - transform.position;
-        Debug.Log("Player Offset: " + PlayerOffset);
-        transform.position = Vector3.Lerp(transform.position, transform.position - PlayerOffset * 2, Speed * Time.deltaTime);
+        Vector3 Direction = Player.transform.position - transform.position;
+        float Distance = Direction.magnitude;
+        Direction = Direction.normalized;
+
+        transform.position -= Direction * (Speed * Time.deltaTime);
     }
 
     IEnumerator DelaySlash(float delayTime)
