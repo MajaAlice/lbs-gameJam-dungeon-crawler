@@ -17,7 +17,7 @@ public class EnemyManager : MonoBehaviour
 
     public GameObject Slash;
     public bool CanSlash = true;
-    public float SlashDelay;
+    public float AttackDelay;
     public Vector3 SlashSize;
     public float SlashDistance;
 
@@ -64,7 +64,7 @@ public class EnemyManager : MonoBehaviour
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
                 if (CanSlash && Distance > 1)
                 {
-                    StartCoroutine(DelaySlash(SlashDelay));
+                    StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
                 if(Distance > SlashDistance + SlashSize.y)
@@ -76,35 +76,33 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.MuskeetRanged:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if ((Mathf.Abs(transform.rotation.z - (RotationZ - 90)) < 75) && CanSlash && Distance > 1)
+                if (CanSlash && Distance > 15 && Distance > 12)
                 {
-                    StartCoroutine(DelaySlash(SlashDelay));
+                    StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
                 if (Distance < 12)
                 {
                     MoveEnemyAwayFromPlayer();
                 }
-                else if(Distance < 15)
+                else if(Distance > 15)
                 {
                     MoveEnemyTowardsPlayer();
                 }
                     break;
+
             default:
+                Debug.Log("WTF have you done????");
                 break;
-        }
-        if (Health <= 0)
-        {
-            Destroy(gameObject);
         }
     }
 
-    void MoveEnemyTowardsPlayer()
+    void MoveEnemyTowardsPlayer() // With Lerp Function -Lud
     {
         transform.position = Vector3.Lerp(transform.position, Player.transform.position, Speed * Time.deltaTime);
     }
 
-    void MoveEnemyAwayFromPlayer()
+    void MoveEnemyAwayFromPlayer() // With Lerp Function -Lud
     {
         transform.position = Vector3.Lerp(transform.position, -Player.transform.position, Speed * Time.deltaTime);
     }
@@ -115,6 +113,7 @@ public class EnemyManager : MonoBehaviour
         Vector3 SlashPosition = transform.position + transform.up * SlashDistance;
         GameObject TempSlash = Instantiate(Slash, SlashPosition, transform.rotation);
         TempSlash.transform.localScale = SlashSize;
+        TempSlash.tag = "MeleeEnemyAttack";
         yield return new WaitForSeconds(delayTime);
         CanSlash = true;
     }
