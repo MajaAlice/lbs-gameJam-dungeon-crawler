@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour
 {
     public GameObject PlayerSlash;
     public GameObject Dash;
+    public GameObject PlayerBullet;
 
     // Player Values -Lud
     public int Health = 7; // Base 7
