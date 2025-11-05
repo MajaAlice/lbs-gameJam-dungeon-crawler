@@ -16,12 +16,16 @@ public class PlayerManager : MonoBehaviour
     public byte AttackDamage = 1;
     public float MeleeDamageMult = 1;
     public float RangedDamageMult = 1;
+    public int MagSize = 6;
+    public int CurrentMag = 6;
+
     // Speed Values -Lud
     public float PlayerSpeed = 10;
     public float CameraSpeed = 5;
     public float DashLenght = 1;
     public Vector3 SlashSize = new Vector3(2,2,1);
     public float SlashDistance = 1;
+    public float BulletSpeed = 10;
 
     // Bools -Lud
     bool CanDash = true;
@@ -72,6 +76,7 @@ public class PlayerManager : MonoBehaviour
             if (Input.GetKeyDown(Slash))
             {
                 Instantiate(PlayerBullet, transform.position, transform.rotation);
+                if (CurrentMag != 0)CurrentMag--;
             }
         }
         //slashy slash - Maja
