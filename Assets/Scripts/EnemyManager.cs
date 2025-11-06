@@ -14,6 +14,7 @@ public class EnemyManager : MonoBehaviour
 
     GameObject Player;
     PlayerManager PlayerManager;
+    Animator EnemyAnimator;
 
     public GameObject Slash;
     public bool CanSlash = true;
@@ -44,6 +45,7 @@ public class EnemyManager : MonoBehaviour
         // Make Sure The Player Has The Player Tag -Lud
         Player = GameObject.FindGameObjectWithTag("Player");
         PlayerManager = Player.GetComponent<PlayerManager>();
+        EnemyAnimator = gameObject.GetComponent<Animator>();
     }
     private void Update() // Switches To The Right Int Then Uses It To Move
     {
@@ -67,7 +69,7 @@ public class EnemyManager : MonoBehaviour
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if (Distance > SlashDistance + SlashSize.y)
+                if (Distance > SlashDistance + (SlashSize.y / 2))
                 {
                     MoveEnemyTowardsPlayer();
                 }
@@ -111,6 +113,8 @@ public class EnemyManager : MonoBehaviour
                 Debug.Log("What The Fuck have you done????");
                 break;
         }
+
+        AnimatorBools();
     }
 
     void MoveEnemyTowardsPlayer() // With Lerp Function -Lud
@@ -163,5 +167,11 @@ public class EnemyManager : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+
+    void AnimatorBools()
+    {
+        Vector3 Direction = transform.up;
+        Debug.Log(Direction);
     }
 }
