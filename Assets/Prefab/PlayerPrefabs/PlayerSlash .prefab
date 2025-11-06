@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73b06836d6a9c5a4fbbe4c41f398cd42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerManager: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!1 &1750476695464583407
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +132,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8557919423450019163}
   - component: {fileID: 8946517972130659971}
-  - component: {fileID: 137285973345213463}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -208,15 +209,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &137285973345213463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750476695464583407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b06836d6a9c5a4fbbe4c41f398cd42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

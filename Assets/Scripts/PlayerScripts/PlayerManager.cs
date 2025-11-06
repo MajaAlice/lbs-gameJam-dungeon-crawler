@@ -11,7 +11,8 @@ public class PlayerManager : MonoBehaviour
 
     // Player Values -Lud
     public int Health = 7; // Base 7
-    public byte Sake = 0; // Max 6
+    public byte Sake = 0;
+    public byte MaxSake = 6;
     public byte Blood = 0; // Max 9
     public byte AttackDamage = 1;
     public float SlashDistance = 1;
@@ -21,6 +22,7 @@ public class PlayerManager : MonoBehaviour
     public float RangedDamageMult = 1;
     public float OnHitIFrameDuration = 0.1f;
     public float DashIframeDuration = 0.1f;
+    public float HealingDuration = 2f;
    
     //These variables are controlled by the Player Slash script
     public int MagSize = 6;
@@ -40,6 +42,7 @@ public class PlayerManager : MonoBehaviour
     bool CanDash = true;
     bool CanSlash = true;
     bool CanBeHurt = true;
+    bool IsInteracting = false; //Controlls interacts and certain player functions like healing and sake creation - Maja
 
     // Movement Keys -Lud
     [SerializeField] KeyCode Up = KeyCode.W;
@@ -50,6 +53,9 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] KeyCode dash = KeyCode.LeftShift;
     [SerializeField] KeyCode Slash = KeyCode.Mouse0;
     [SerializeField] KeyCode Aim = KeyCode.Mouse1;
+    //Misc Keybinds
+    [SerializeField] KeyCode Heal = KeyCode.F;
+    [SerializeField] KeyCode MakeSake = KeyCode.E;
 
     void Update()
     {
@@ -61,10 +67,10 @@ public class PlayerManager : MonoBehaviour
 
         // Player Movement -Lud
         Vector2 MovementVector = Vector2.zero;
-        if (Input.GetKey(Up)) { MovementVector += Vector2.up; }
-        if (Input.GetKey(Down)) { MovementVector += Vector2.down; }
-        if (Input.GetKey(Right)) { MovementVector += Vector2.right; }
-        if (Input.GetKey(Left)) { MovementVector += Vector2.left; }
+        if (Input.GetKey(Up) && IsInteracting == false) { MovementVector += Vector2.up; }
+        if (Input.GetKey(Down) && IsInteracting == false) { MovementVector += Vector2.down; }
+        if (Input.GetKey(Right) && IsInteracting == false) { MovementVector += Vector2.right; }
+        if (Input.GetKey(Left) && IsInteracting == false) { MovementVector += Vector2.left; }
 
         MovementVector = MovementVector.normalized * (PlayerSpeed * Time.deltaTime);
         gameObject.transform.position += new Vector3(MovementVector.x, MovementVector.y, 0);
@@ -78,7 +84,7 @@ public class PlayerManager : MonoBehaviour
         
 
         // Switches Player into aim mode - Maja
-        if (Input.GetKey(Aim))
+        if (Input.GetKey(Aim) && IsInteracting == false)
         {
             if (Input.GetKeyDown(Slash) && CurrentMag > 0)
             {
@@ -87,9 +93,20 @@ public class PlayerManager : MonoBehaviour
             }
             
         }
-        else if (Input.GetKeyDown(Slash) && CanSlash)
+        else if (Input.GetKeyDown(Slash) && CanSlash && IsInteracting == false)
         {
             StartCoroutine(DelaySlash(SlashDelay));
+        }
+
+        //healing
+        if (Input.GetKeyDown(Heal) && Sake >= 1 && IsInteracting == false)
+        {
+            StartCoroutine(Healing(HealingDuration));
+        }
+        //Making Sake
+        if (Input.GetKeyDown(MakeSake) && Blood >= 3 && (Sake < MaxSake) &&  IsInteracting == false)
+        {
+            StartCoroutine(CreateSake(HealingDuration));
         }
 
     }
@@ -131,10 +148,27 @@ public class PlayerManager : MonoBehaviour
         BulletsGrabbed = 0;
         if (CurrentMag > MagSize) { CurrentMag = MagSize; }
     }
-    IEnumerator IFrames (float delayTime)                     //momenterily makes the player invincible
+    IEnumerator IFrames (float delayTime)                     //momenterily makes the player invincible - Maja
     {
         CanBeHurt = false;
         yield return new WaitForSeconds(delayTime);
         CanBeHurt = true;
     }
+    IEnumerator Healing(float delayTime)                     //stops all actions and adds health - Maja
+    {
+        IsInteracting = true;
+        Sake--;
+        yield return new WaitForSeconds(delayTime);
+        Health++;
+        IsInteracting = false;
+    }
+    IEnumerator CreateSake(float delayTime)                     //stops all actions and adds sake - Maja
+    {
+        IsInteracting = true;
+        Blood -= 3;
+        yield return new WaitForSeconds(delayTime);
+        Sake++;
+        IsInteracting = false;
+    }
 }
+

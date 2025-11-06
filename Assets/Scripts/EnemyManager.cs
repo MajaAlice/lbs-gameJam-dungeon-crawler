@@ -134,7 +134,8 @@ public class EnemyManager : MonoBehaviour
         {
             
             Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.MeleeDamageMult);
-            PlayerManager.Blood++;
+            if(PlayerManager.Blood != 9) PlayerManager.Blood++;
+
             if (Health <= 0)
             {
                 Destroy(gameObject);

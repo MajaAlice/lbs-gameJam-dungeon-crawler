@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 159076274}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5142927c0e2a34dacdf42f8fead132, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1
+  Health: 2147483647
   Damage: 1
   Speed: 1
   AimSpeed: 5

@@ -8,6 +8,7 @@ TagManager:
   - RangedPlayerAttack
   - MeleeEnemyAttack
   - RangedEnemyAttack
+  - Enemy
   layers:
   - Default
   - TransparentFX
