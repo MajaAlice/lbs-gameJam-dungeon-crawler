@@ -171,7 +171,8 @@ public class EnemyManager : MonoBehaviour
 
     void AnimatorBools()
     {
-        Vector3 Direction = transform.up;
-        Debug.Log(Direction);
+        EnemyAnimator.SetBool("Attack", !CanSlash);
+        EnemyAnimator.SetBool("Hit", false);
+        EnemyAnimator.SetBool("Death", false);
     }
 }
