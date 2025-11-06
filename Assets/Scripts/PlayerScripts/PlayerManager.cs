@@ -57,6 +57,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] KeyCode Heal = KeyCode.F;
     [SerializeField] KeyCode MakeSake = KeyCode.E;
 
+    private void Start()
+    {
+
+    }
     void Update()
     {
         // Player Rotation To Mouse -Lud
@@ -114,6 +118,7 @@ public class PlayerManager : MonoBehaviour
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
     {
         Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -10), Time.deltaTime * CameraSpeed);
+        //Animator.setFl
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
