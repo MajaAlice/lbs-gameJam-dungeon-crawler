@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSlash: {fileID: 53005353494126858, guid: 31a85d0408f703448a6224a0c0b7e681, type: 3}
   Dash: {fileID: 6795609020376876277, guid: 9086bb3521a74ad4cab6c97c8e2af4ac, type: 3}
-  PlayerBullet: {fileID: 0}
+  PlayerBullet: {fileID: 3441362091616073274, guid: 30d93a68764cfc14a81f480bf692ab84, type: 3}
   Health: 7
   Sake: 0
   MaxSake: 6
@@ -248,9 +248,9 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.15
+  m_Radius: 0.3

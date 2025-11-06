@@ -79,7 +79,7 @@ public class PlayerManager : MonoBehaviour
         MovementVector = MovementVector.normalized * (PlayerSpeed * Time.deltaTime);
         gameObject.transform.position += new Vector3(MovementVector.x, MovementVector.y, 0);
 
-        if (Input.GetKeyDown(dash) && CanDash)
+        if (Input.GetKeyDown(dash) && CanDash && IsInteracting == false)
         {
             StartCoroutine(IFrames(DashIframeDuration));
             StartCoroutine(DelayDash(DashDelay));
@@ -174,6 +174,12 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
         Sake++;
         IsInteracting = false;
+    }
+    IEnumerator Death(float delayTime)                     //Dies inside looking at this code :lesanae - Maja
+    {
+        IsInteracting = true;
+        yield return new WaitForSeconds(delayTime);
+        Destroy(gameObject);
     }
 }
 
