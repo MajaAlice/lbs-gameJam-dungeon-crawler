@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6771867998882307543
+--- !u!1 &1968108330161074006
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,92 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8973184404170480012}
-  - component: {fileID: 8920504737103715520}
+  - component: {fileID: 7949930496472056630}
+  - component: {fileID: 7280548389939454343}
+  - component: {fileID: 5200420502854712199}
   m_Layer: 0
-  m_Name: Player 1
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8973184404170480012
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6771867998882307543}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8897421749830470083}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8920504737103715520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6771867998882307543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc0127bbfea5454998a34cf66eed9b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerSlash: {fileID: 53005353494126858, guid: 31a85d0408f703448a6224a0c0b7e681, type: 3}
-  Dash: {fileID: 6795609020376876277, guid: 9086bb3521a74ad4cab6c97c8e2af4ac, type: 3}
-  PlayerSpeed: 5
-  CameraSpeed: 0
-  dash: 304
-  DashLenght: 5
-  Up: 119
-  Down: 115
-  Right: 100
-  Left: 97
---- !u!1 &7907885693138400353
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8897421749830470083}
-  - component: {fileID: 4718542482746150481}
-  m_Layer: 0
-  m_Name: Triangle
+  m_Name: Player_Sprite_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8897421749830470083
+--- !u!4 &7949930496472056630
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7907885693138400353}
+  m_GameObject: {fileID: 1968108330161074006}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.045736033}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8973184404170480012}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4718542482746150481
+--- !u!212 &7280548389939454343
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7907885693138400353}
+  m_GameObject: {fileID: 1968108330161074006}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -131,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 1197855320226781875, guid: 5c318aa0c0f2a64488e103d0849667ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -142,3 +88,104 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5200420502854712199
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968108330161074006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3309dd009abe60e4095d06432e13e2fd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &6771867998882307543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8973184404170480012}
+  - component: {fileID: 8920504737103715520}
+  m_Layer: 0
+  m_Name: Player 1
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8973184404170480012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6771867998882307543}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7949930496472056630}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8920504737103715520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6771867998882307543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc0127bbfea5454998a34cf66eed9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerSlash: {fileID: 53005353494126858, guid: 31a85d0408f703448a6224a0c0b7e681, type: 3}
+  Dash: {fileID: 6795609020376876277, guid: 9086bb3521a74ad4cab6c97c8e2af4ac, type: 3}
+  PlayerBullet: {fileID: 0}
+  Health: 7
+  Sake: 0
+  MaxSake: 6
+  Blood: 0
+  AttackDamage: 1
+  SlashDistance: 1
+  SlashDelay: 0.5
+  DashDelay: 1
+  MeleeDamageMult: 1
+  RangedDamageMult: 1
+  OnHitIFrameDuration: 0.1
+  DashIframeDuration: 0.1
+  HealingDuration: 2
+  MagSize: 6
+  CurrentMag: 6
+  MaxBulletGrab: 4
+  BulletsGrabbed: 0
+  PlayerSpeed: 5
+  CameraSpeed: 0
+  DashLenght: 5
+  SlashSize: {x: 2, y: 2, z: 1}
+  BulletSpeed: 10.08
+  Up: 119
+  Down: 115
+  Right: 100
+  Left: 97
+  dash: 304
+  Slash: 323
+  Aim: 324
+  Heal: 102
+  MakeSake: 101
