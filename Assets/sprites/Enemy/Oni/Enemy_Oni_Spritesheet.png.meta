@@ -183,7 +183,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -235,10 +235,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 171
-        width: 16
-        height: 21
+        x: 0
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,10 +257,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 171
-        width: 21
-        height: 19
+        x: 32
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +279,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 185
-        width: 9
-        height: 7
+        x: 64
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +301,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 104
-        y: 185
-        width: 9
-        height: 7
+        x: 96
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 112
-        y: 185
-        width: 6
-        height: 7
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,10 +345,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 117
-        y: 185
-        width: 6
-        height: 7
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +367,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 171
-        width: 23
-        height: 11
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,10 +389,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 153
-        width: 9
-        height: 8
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,10 +411,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 136
-        y: 153
-        width: 8
-        height: 8
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,10 +433,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_9
       rect:
         serializedVersion: 2
-        x: 143
-        y: 153
-        width: 6
-        height: 8
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,10 +455,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_10
       rect:
         serializedVersion: 2
-        x: 152
-        y: 153
-        width: 6
-        height: 8
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +477,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_11
       rect:
         serializedVersion: 2
-        x: 8
-        y: 137
-        width: 23
-        height: 13
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +499,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 40
-        y: 138
-        width: 23
-        height: 12
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +521,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_13
       rect:
         serializedVersion: 2
-        x: 72
-        y: 137
-        width: 23
-        height: 13
+        x: 128
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,10 +543,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_14
       rect:
         serializedVersion: 2
-        x: 104
-        y: 138
-        width: 23
-        height: 12
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,10 +565,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_15
       rect:
         serializedVersion: 2
-        x: 127
-        y: 121
-        width: 9
-        height: 8
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,10 +587,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_16
       rect:
         serializedVersion: 2
-        x: 135
-        y: 121
-        width: 8
-        height: 8
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +609,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_17
       rect:
         serializedVersion: 2
-        x: 142
-        y: 121
-        width: 6
-        height: 8
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,10 +631,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_18
       rect:
         serializedVersion: 2
-        x: 151
-        y: 121
-        width: 6
-        height: 8
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -653,10 +653,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_19
       rect:
         serializedVersion: 2
-        x: 8
-        y: 107
-        width: 23
-        height: 11
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -675,10 +675,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_20
       rect:
         serializedVersion: 2
-        x: 40
-        y: 107
-        width: 23
-        height: 11
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -697,10 +697,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_21
       rect:
         serializedVersion: 2
-        x: 72
-        y: 107
-        width: 23
-        height: 11
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,10 +719,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_22
       rect:
         serializedVersion: 2
-        x: 104
-        y: 107
-        width: 23
-        height: 11
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,10 +741,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_23
       rect:
         serializedVersion: 2
-        x: 127
-        y: 89
-        width: 9
-        height: 8
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -763,10 +763,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_24
       rect:
         serializedVersion: 2
-        x: 135
-        y: 89
-        width: 8
-        height: 8
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,10 +785,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_25
       rect:
         serializedVersion: 2
-        x: 142
-        y: 89
-        width: 6
-        height: 8
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -807,10 +807,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_26
       rect:
         serializedVersion: 2
-        x: 151
-        y: 89
-        width: 6
-        height: 8
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -829,10 +829,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_27
       rect:
         serializedVersion: 2
-        x: 7
-        y: 75
-        width: 24
-        height: 11
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,10 +851,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_28
       rect:
         serializedVersion: 2
-        x: 40
-        y: 75
-        width: 23
-        height: 11
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -873,10 +873,10 @@ TextureImporter:
       name: Enemy_Oni_Spritesheet_29
       rect:
         serializedVersion: 2
-        x: 72
-        y: 75
-        width: 23
-        height: 11
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -891,341 +891,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_30
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 75
-        width: 24
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df4d49df8d3c68140800000000000000
-      internalID: 4721676596079285501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_31
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 57
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 767962d3752d4fd50800000000000000
-      internalID: 6770267411974625127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_32
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 57
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1cc7b278e70748840800000000000000
-      internalID: 5225425156392582337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_33
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 57
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc2f05ed3ae1b1ed0800000000000000
-      internalID: -2442324683760012596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_34
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 57
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c72eb8ce8d19e8c90800000000000000
-      internalID: -7165629596232326532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_35
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 43
-        width: 22
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e2ec07e02df7c750800000000000000
-      internalID: 6325302519422313186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_36
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 43
-        width: 23
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ebed9551d0e6eb9b0800000000000000
-      internalID: -5062487928646017346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_37
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 43
-        width: 23
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24f87c988a2aab7b0800000000000000
-      internalID: -5207671174350794942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_38
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 43
-        width: 22
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 30ac4a84c589539c0800000000000000
-      internalID: -3948081976197199357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_39
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 25
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 456cebb7db6cdb1d0800000000000000
-      internalID: -3333289632057080236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_40
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 25
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1cdbb52753d43f6e0800000000000000
-      internalID: -1805014133698216511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_41
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 25
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ff9ee758732f92a0800000000000000
-      internalID: -6728620318489927688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_42
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 25
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db4386da2cfc61fa0800000000000000
-      internalID: -5830244232544635715
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_43
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 11
-        width: 23
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed6702ff47fe0a410800000000000000
-      internalID: 1486451162807826142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Oni_Spritesheet_44
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 11
-        width: 23
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 635c97e998f8f6aa0800000000000000
-      internalID: -6165551543614847690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2787990aa30c8b74c9ba313250f1a75e
     internalID: 0
     vertices: []
     indices: 
@@ -1259,22 +929,7 @@ TextureImporter:
       Enemy_Oni_Spritesheet_28: 2019346277878311138
       Enemy_Oni_Spritesheet_29: 4764720644011668647
       Enemy_Oni_Spritesheet_3: 2339309514897891874
-      Enemy_Oni_Spritesheet_30: 4721676596079285501
-      Enemy_Oni_Spritesheet_31: 6770267411974625127
-      Enemy_Oni_Spritesheet_32: 5225425156392582337
-      Enemy_Oni_Spritesheet_33: -2442324683760012596
-      Enemy_Oni_Spritesheet_34: -7165629596232326532
-      Enemy_Oni_Spritesheet_35: 6325302519422313186
-      Enemy_Oni_Spritesheet_36: -5062487928646017346
-      Enemy_Oni_Spritesheet_37: -5207671174350794942
-      Enemy_Oni_Spritesheet_38: -3948081976197199357
-      Enemy_Oni_Spritesheet_39: -3333289632057080236
       Enemy_Oni_Spritesheet_4: 3545027500822695909
-      Enemy_Oni_Spritesheet_40: -1805014133698216511
-      Enemy_Oni_Spritesheet_41: -6728620318489927688
-      Enemy_Oni_Spritesheet_42: -5830244232544635715
-      Enemy_Oni_Spritesheet_43: 1486451162807826142
-      Enemy_Oni_Spritesheet_44: -6165551543614847690
       Enemy_Oni_Spritesheet_5: -1112317174100836978
       Enemy_Oni_Spritesheet_6: -575626734157394050
       Enemy_Oni_Spritesheet_7: 4198920767354087070
