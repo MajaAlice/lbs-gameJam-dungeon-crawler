@@ -32,6 +32,7 @@ public class PlayerManager : MonoBehaviour
     public TMP_Text HealthText;
     public TMP_Text SakeText;
     public TMP_Text BloodText;
+    public TMP_Text BulletText;
 
     //These variables are controlled by the Player Slash script
     public int MagSize = 6;
@@ -128,6 +129,7 @@ public class PlayerManager : MonoBehaviour
         HealthText.text = "Health: " + Health.ToString();
         SakeText.text = "Sake: " + Sake.ToString();
         BloodText.text = "Blood: " + Blood.ToString();
+        BulletText.text = "Ammo: " + CurrentMag.ToString(); 
     }
 
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
