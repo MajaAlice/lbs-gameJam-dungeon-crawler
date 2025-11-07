@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
 
     public void GameOptions()
     {
-        SceneManager.LoadScene("Nah");
+        SceneManager.LoadScene("Options");
     }
 
     public void StartGame()
