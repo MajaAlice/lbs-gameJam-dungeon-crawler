@@ -71,7 +71,7 @@ public class EnemyManager : MonoBehaviour
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if (Distance > SlashDistance && IsDying == false)
+                if (Distance < SlashDistance && IsDying == false)
                 {
                     MoveEnemyTowardsPlayer();
                 }
@@ -85,7 +85,7 @@ public class EnemyManager : MonoBehaviour
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if(Distance > SlashDistance + SlashSize.y && IsDying == false)
+                if(Distance < SlashDistance + SlashSize.y && IsDying == false)
                 {
                     MoveEnemyTowardsPlayer();
                 }
