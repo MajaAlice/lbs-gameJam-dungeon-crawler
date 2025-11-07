@@ -66,12 +66,12 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.KatanaMelee:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanSlash && Distance < 1 && IsDying == false)
+                if (CanSlash && Distance < SlashDistance && IsDying == false)
                 {
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if (Distance < SlashDistance && IsDying == false)
+                if (Distance > SlashDistance && IsDying == false)
                 {
                     MoveEnemyTowardsPlayer();
                 }
@@ -80,12 +80,12 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.TankMelee:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanSlash && Distance > 1 && IsDying == false)
+                if (CanSlash && Distance < SlashDistance && IsDying == false)
                 {
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if(Distance < SlashDistance + SlashSize.y && IsDying == false)
+                if(Distance > SlashDistance + SlashSize.y && IsDying == false)
                 {
                     MoveEnemyTowardsPlayer();
                 }
@@ -98,8 +98,6 @@ public class EnemyManager : MonoBehaviour
                 {
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
-
-                Debug.Log("Player Distance: " + Distance);
                 // Moves Player So Long As Distance Is Less Then One -Lud
                 if (Distance < 12 && IsDying == false)
                 {
