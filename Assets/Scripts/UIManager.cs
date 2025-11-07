@@ -1,24 +1,25 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-
-    private void FixedUpdate()
-    {
-        
-    }
-    void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
 
-    void GameOptions()
+    public void GameOptions()
     {
-
+        SceneManager.LoadScene("Nah");
     }
 
-    void StartGame()
+    public void StartGame()
     {
+        SceneManager.LoadScene("Demo_Level");
+    }
 
+    public void OptionsReturn()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
