@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -27,6 +28,10 @@ public class PlayerManager : MonoBehaviour
 
     // Fuck
     public float CamFuckDist = 1.5f;
+
+    public TMP_Text HealthText;
+    public TMP_Text SakeText;
+    public TMP_Text BloodText;
 
     //These variables are controlled by the Player Slash script
     public int MagSize = 6;
@@ -120,10 +125,15 @@ public class PlayerManager : MonoBehaviour
         //death - Maja
         if (Health <= 0) StartCoroutine(Death(1f));
 
+        HealthText.text = "Health: " + Health.ToString();
+        SakeText.text = "Sake: " + Sake.ToString();
+        BloodText.text = "Blood: " + Blood.ToString();
     }
 
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
     {
+
+
         Vector3 Direction = FUCK.transform.position - transform.position;
         float Distance = Direction.magnitude;
         Direction = Direction.normalized;
