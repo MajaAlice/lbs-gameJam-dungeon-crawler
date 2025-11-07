@@ -417,6 +417,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: MagSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: CurrentMag
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: SlashDelay
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8973184404170480012, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.199287

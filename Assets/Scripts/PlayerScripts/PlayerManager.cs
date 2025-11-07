@@ -8,6 +8,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject PlayerSlash;
     public GameObject Dash;
     public GameObject PlayerBullet;
+    public GameObject FUCK;
 
     // Player Values -Lud
     public int Health = 7; // Base 7
@@ -23,7 +24,10 @@ public class PlayerManager : MonoBehaviour
     public float OnHitIFrameDuration = 0.1f;
     public float DashIframeDuration = 0.1f;
     public float HealingDuration = 2f;
-   
+
+    // Fuck
+    public float CamFuckDist = 1.5f;
+
     //These variables are controlled by the Player Slash script
     public int MagSize = 6;
     public int CurrentMag = 6;
@@ -59,7 +63,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-
+        FUCK = GameObject.FindGameObjectWithTag("Fuck");
     }
     void Update()
     {
@@ -120,7 +124,11 @@ public class PlayerManager : MonoBehaviour
 
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
     {
-        Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -10), Time.deltaTime * CameraSpeed);
+        Vector3 Direction = FUCK.transform.position - transform.position;
+        float Distance = Direction.magnitude;
+        Direction = Direction.normalized;
+
+        Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x + (Direction.x * CamFuckDist), transform.position.y + (Direction.y * CamFuckDist), -10), Time.deltaTime * CameraSpeed);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
