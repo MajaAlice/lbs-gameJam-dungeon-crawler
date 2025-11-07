@@ -14,7 +14,7 @@ public class EnemyManager : MonoBehaviour
 
     GameObject Player;
     PlayerManager PlayerManager;
-    Animator EnemyAnimator;
+    //Animator EnemyAnimator;
 
     public GameObject Slash;
     public GameObject Bullet;
@@ -23,6 +23,9 @@ public class EnemyManager : MonoBehaviour
     public float AttackDelay;
     public Vector3 SlashSize;
     public float SlashDistance;
+    public int CurrentRoom = 0; //current room the player is in
+    public int EnemyRoomNr = 0; //which room the enemy belongs to - Maja
+  
 
     bool IsDying = false;
 
@@ -49,74 +52,77 @@ public class EnemyManager : MonoBehaviour
         // Make Sure The Player Has The Player Tag -Lud
         Player = GameObject.FindGameObjectWithTag("Player");
         PlayerManager = Player.GetComponent<PlayerManager>();
-        EnemyAnimator = gameObject.GetComponent<Animator>();
+        //EnemyAnimator = gameObject.GetComponent<Animator>();
     }
     private void Update() // Switches To The Right Int Then Uses It To Move
     {
-        // Gets The Rotation To Point Att The Player On The Z Axis -Lud
-        Vector3 Diffrence = (Player.transform.position - transform.position).normalized;
-        float RotationZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
-        // Makes The Enemy Rotate Slower Then Instantly -Lud
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, RotationZ - 90), AimSpeed * Time.deltaTime);
-
-        float Distance = (Player.transform.position - transform.position).magnitude;
-        switch (EL)
+        if(CurrentRoom == EnemyRoomNr)
         {
-            case EnemyLogic.None:
-                Debug.Log("Value Missing");
-                break;
-            case EnemyLogic.KatanaMelee:
+            // Gets The Rotation To Point Att The Player On The Z Axis -Lud
+            Vector3 Diffrence = (Player.transform.position - transform.position).normalized;
+            float RotationZ = Mathf.Atan2(Diffrence.y, Diffrence.x) * Mathf.Rad2Deg;
+            // Makes The Enemy Rotate Slower Then Instantly -Lud
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, RotationZ - 90), AimSpeed * Time.deltaTime);
 
-                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanSlash && Distance < SlashDistance && IsDying == false)
-                {
-                    StartCoroutine(DelaySlash(AttackDelay));
-                }
-                // Moves Player So Long As Distance Is Less Then One -Lud
-                if (Distance > SlashDistance && IsDying == false)
-                {
-                    MoveEnemyTowardsPlayer();
-                }
+            float Distance = (Player.transform.position - transform.position).magnitude;
+            switch (EL)
+            {
+                case EnemyLogic.None:
+                    Debug.Log("Value Missing");
+                    break;
+                case EnemyLogic.KatanaMelee:
 
-                break;
-            case EnemyLogic.TankMelee:
+                    // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
+                    if (CanSlash && Distance < SlashDistance && IsDying == false)
+                    {
+                        StartCoroutine(DelaySlash(AttackDelay));
+                    }
+                    // Moves Player So Long As Distance Is Less Then One -Lud
+                    if (Distance > SlashDistance && IsDying == false)
+                    {
+                        MoveEnemyTowardsPlayer();
+                    }
 
-                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanSlash && Distance < SlashDistance && IsDying == false)
-                {
-                    StartCoroutine(DelaySlash(AttackDelay));
-                }
-                // Moves Player So Long As Distance Is Less Then One -Lud
-                if(Distance > SlashDistance + SlashSize.y && IsDying == false)
-                {
-                    MoveEnemyTowardsPlayer();
-                }
+                    break;
+                case EnemyLogic.TankMelee:
 
-                break;
-            case EnemyLogic.MuskeetRanged:
+                    // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
+                    if (CanSlash && Distance < SlashDistance + SlashSize.y && IsDying == false)
+                    {
+                        StartCoroutine(DelaySlash(AttackDelay));
+                    }
+                    // Moves Player So Long As Distance Is Less Then One -Lud
+                    if (Distance > SlashDistance && IsDying == false)
+                    {
+                        MoveEnemyTowardsPlayer();
+                    }
 
-                // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanShoot && Distance < 15 && Distance > 12 && IsDying == false)
-                {
-                    StartCoroutine(DelayShot(AttackDelay));
-                }
-                // Moves Player So Long As Distance Is Less Then One -Lud
-                if (Distance < 12 && IsDying == false)
-                {
-                    MoveEnemyAwayFromPlayer();
-                }
-                else if (Distance > 15 && IsDying == false)
-                {
-                    MoveEnemyTowardsPlayer();
-                }
+                    break;
+                case EnemyLogic.MuskeetRanged:
+
+                    // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
+                    if (CanShoot && Distance < 8 && Distance > 5 && IsDying == false)
+                    {
+                        StartCoroutine(DelayShot(AttackDelay));
+                    }
+                    // Moves Player So Long As Distance Is Less Then One -Lud
+                    if (Distance < 5 && IsDying == false)
+                    {
+                        MoveEnemyAwayFromPlayer();
+                    }
+                    else if (Distance > 8 && IsDying == false)
+                    {
+                        MoveEnemyTowardsPlayer();
+                    }
                     break;
 
-            default:
-                Debug.Log("What The Fuck have you done????");
-                break;
+                default:
+                    Debug.Log("What The Fuck have you done????");
+                    break;
+            }
         }
 
-        AnimatorBools();
+        //AnimatorBools();
     }
 
     void MoveEnemyTowardsPlayer() // With Lerp Function -Lud
@@ -151,9 +157,9 @@ public class EnemyManager : MonoBehaviour
     {
         CanShoot = false;
         Vector3 SlashPosition = transform.position + transform.up * SlashDistance;
-        GameObject TempSlash = Instantiate(Slash, SlashPosition, transform.rotation);
+        GameObject TempSlash = Instantiate(Bullet, SlashPosition, transform.rotation);
         TempSlash.transform.localScale = SlashSize;
-        TempSlash.tag = "RangeEnemyAttack";
+        TempSlash.tag = "RangedEnemyAttack";
         yield return new WaitForSeconds(delayTime);
         CanShoot = true;
     }
@@ -165,12 +171,12 @@ public class EnemyManager : MonoBehaviour
             
             Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.MeleeDamageMult);
             if(PlayerManager.Blood != 9) PlayerManager.Blood++;
-            EnemyAnimator.SetBool("Hit", true);
+            //EnemyAnimator.SetBool("Hit", true);
 
             if (Health <= 0)
             {
                 IsDying = true;
-                EnemyAnimator.SetBool("Death", true);
+                //EnemyAnimator.SetBool("Death", true);
                 Destroy(gameObject, 1f);
             }
         }
@@ -180,20 +186,20 @@ public class EnemyManager : MonoBehaviour
             if (Health <= 0)
             {
                 IsDying = true;
-                EnemyAnimator.SetBool("Death", true);
-                Destroy(gameObject, 1f);
+                //EnemyAnimator.SetBool("Death", true);
+                Destroy(gameObject, 0f);
             }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        EnemyAnimator.SetBool("Hit", false);
+        //EnemyAnimator.SetBool("Hit", false);
     }
 
-    void AnimatorBools()
-    {
-        EnemyAnimator.SetBool("Attack", !CanSlash);
-        EnemyAnimator.SetBool("Hit", false);
-        EnemyAnimator.SetBool("Death", false);
-    }
+    //void AnimatorBools()
+    //{
+    //    EnemyAnimator.SetBool("Attack", !CanSlash);
+    //    EnemyAnimator.SetBool("Hit", false);
+    //    EnemyAnimator.SetBool("Death", false);
+    //}
 }

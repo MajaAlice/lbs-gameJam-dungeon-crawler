@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_Sprite: {fileID: 1197855320226781875, guid: 5c318aa0c0f2a64488e103d0849667ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   MaxBulletGrab: 4
   BulletsGrabbed: 0
   PlayerSpeed: 5
-  CameraSpeed: 0
+  CameraSpeed: 5
   DashLenght: 5
   SlashSize: {x: 2, y: 2, z: 1}
   BulletSpeed: 10.08
