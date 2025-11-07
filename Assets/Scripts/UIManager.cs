@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -8,7 +7,12 @@ public class UIManager : MonoBehaviour
         Application.Quit();
     }
 
-    void Options()
+    void GameOptions()
+    {
+
+    }
+
+    void StartGame()
     {
 
     }
