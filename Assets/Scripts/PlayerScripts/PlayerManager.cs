@@ -78,7 +78,8 @@ public class PlayerManager : MonoBehaviour
 
         MovementVector = MovementVector.normalized * (PlayerSpeed * Time.deltaTime);
         gameObject.transform.position += new Vector3(MovementVector.x, MovementVector.y, 0);
-
+           
+        //Dash - Maja
         if (Input.GetKeyDown(dash) && CanDash && IsInteracting == false)
         {
             StartCoroutine(IFrames(DashIframeDuration));
@@ -102,23 +103,25 @@ public class PlayerManager : MonoBehaviour
             StartCoroutine(DelaySlash(SlashDelay));
         }
 
-        //healing
+        //healing  -Maja
         if (Input.GetKeyDown(Heal) && Sake >= 1 && IsInteracting == false)
         {
             StartCoroutine(Healing(HealingDuration));
         }
-        //Making Sake
+        //Making Sake - Maja
         if (Input.GetKeyDown(MakeSake) && Blood >= 3 && (Sake < MaxSake) &&  IsInteracting == false)
         {
             StartCoroutine(CreateSake(HealingDuration));
         }
+        //death - Maja
+        if (Health <= 0) StartCoroutine(Death(1f));
 
     }
 
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
     {
         Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -10), Time.deltaTime * CameraSpeed);
-        //Animator.setFl
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -179,7 +182,7 @@ public class PlayerManager : MonoBehaviour
     {
         IsInteracting = true;
         yield return new WaitForSeconds(delayTime);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
 

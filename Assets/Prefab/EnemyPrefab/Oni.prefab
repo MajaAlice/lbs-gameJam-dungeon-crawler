@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 2
   Damage: 1
-  Speed: 3.5
+  Speed: 2.8
   AimSpeed: 25
   Slash: {fileID: 745026702365466146, guid: 7c47dbadda97f8d4681b81f7d2cd2e7b, type: 3}
   CanSlash: 1
