@@ -22,6 +22,8 @@ public class EnemyManager : MonoBehaviour
     public Vector3 SlashSize;
     public float SlashDistance;
 
+    bool IsDying = false;
+
     // Enemy Enum Holders -Lud
     public EnemyLogic EL = EnemyLogic.None;
     public EnemyResistances Res = EnemyResistances.None;
@@ -64,12 +66,12 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.KatanaMelee:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanSlash && Distance > 1)
+                if (CanSlash && Distance < 1 && IsDying == false)
                 {
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if (Distance > SlashDistance + (SlashSize.y / 2))
+                if (Distance > SlashDistance && IsDying == false)
                 {
                     MoveEnemyTowardsPlayer();
                 }
@@ -78,12 +80,12 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.TankMelee:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanSlash && Distance > 1)
+                if (CanSlash && Distance > 1 && IsDying == false)
                 {
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if(Distance > SlashDistance + SlashSize.y)
+                if(Distance > SlashDistance + SlashSize.y && IsDying == false)
                 {
                     MoveEnemyTowardsPlayer();
                 }
@@ -92,18 +94,18 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.MuskeetRanged:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanSlash && Distance > 15 && Distance > 12)
+                if (CanSlash && Distance > 15 && Distance > 12 && IsDying == false)
                 {
                     StartCoroutine(DelaySlash(AttackDelay));
                 }
 
                 Debug.Log("Player Distance: " + Distance);
                 // Moves Player So Long As Distance Is Less Then One -Lud
-                if (Distance < 12)
+                if (Distance < 12 && IsDying == false)
                 {
                     MoveEnemyAwayFromPlayer();
                 }
-                else if (Distance > 15)
+                else if (Distance > 15 && IsDying == false)
                 {
                     MoveEnemyTowardsPlayer();
                 }
@@ -153,10 +155,13 @@ public class EnemyManager : MonoBehaviour
             
             Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.MeleeDamageMult);
             if(PlayerManager.Blood != 9) PlayerManager.Blood++;
+            EnemyAnimator.SetBool("Hit", true);
 
             if (Health <= 0)
             {
-                Destroy(gameObject);
+                IsDying = true;
+                EnemyAnimator.SetBool("Death", true);
+                Destroy(gameObject, 1f);
             }
         }
         else if (collision.CompareTag("RangedPlayerAttack"))
@@ -164,9 +169,15 @@ public class EnemyManager : MonoBehaviour
             Health -= Mathf.RoundToInt(PlayerManager.AttackDamage * PlayerManager.RangedDamageMult);
             if (Health <= 0)
             {
-                Destroy(gameObject);
+                IsDying = true;
+                EnemyAnimator.SetBool("Death", true);
+                Destroy(gameObject, 1f);
             }
         }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        EnemyAnimator.SetBool("Hit", false);
     }
 
     void AnimatorBools()
