@@ -17,7 +17,9 @@ public class EnemyManager : MonoBehaviour
     Animator EnemyAnimator;
 
     public GameObject Slash;
+    public GameObject Bullet;
     public bool CanSlash = true;
+    public bool CanShoot = true;
     public float AttackDelay;
     public Vector3 SlashSize;
     public float SlashDistance;
@@ -94,9 +96,9 @@ public class EnemyManager : MonoBehaviour
             case EnemyLogic.MuskeetRanged:
 
                 // Checks If The Enemy Is Looking Att The Player And If The CoolDown Is Off -Lud
-                if (CanSlash && Distance > 15 && Distance > 12 && IsDying == false)
+                if (CanShoot && Distance < 15 && Distance > 12 && IsDying == false)
                 {
-                    StartCoroutine(DelaySlash(AttackDelay));
+                    StartCoroutine(DelayShot(AttackDelay));
                 }
                 // Moves Player So Long As Distance Is Less Then One -Lud
                 if (Distance < 12 && IsDying == false)
@@ -144,6 +146,16 @@ public class EnemyManager : MonoBehaviour
         TempSlash.tag = "MeleeEnemyAttack";
         yield return new WaitForSeconds(delayTime);
         CanSlash = true;
+    }
+    IEnumerator DelayShot(float delayTime)
+    {
+        CanShoot = false;
+        Vector3 SlashPosition = transform.position + transform.up * SlashDistance;
+        GameObject TempSlash = Instantiate(Slash, SlashPosition, transform.rotation);
+        TempSlash.transform.localScale = SlashSize;
+        TempSlash.tag = "RangeEnemyAttack";
+        yield return new WaitForSeconds(delayTime);
+        CanShoot = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

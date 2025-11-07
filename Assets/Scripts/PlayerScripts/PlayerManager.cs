@@ -121,7 +121,6 @@ public class PlayerManager : MonoBehaviour
     void LateUpdate() // Lerps The Camera Based On The Player -Lud
     {
         Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, new Vector3(transform.position.x, transform.position.y, -10), Time.deltaTime * CameraSpeed);
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -178,7 +177,7 @@ public class PlayerManager : MonoBehaviour
         Sake++;
         IsInteracting = false;
     }
-    IEnumerator Death(float delayTime)                     //Dies inside looking at this code :lesanae - Maja
+    IEnumerator Death(float delayTime)                     //Dies inside looking at this code :lesanae: - Maja
     {
         IsInteracting = true;
         yield return new WaitForSeconds(delayTime);
