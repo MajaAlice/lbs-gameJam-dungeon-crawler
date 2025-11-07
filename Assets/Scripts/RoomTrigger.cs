@@ -1,15 +1,18 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class RoomTrigger : MonoBehaviour
 {
-    public EnemyManager EnemyManager;
+
     public GameObject Enemy;
 
     public int RoomNr = 0;
+    public int CurrentRoom = 0;
+
+    bool WasUsed = false;
     void Start()
     {
-        Enemy = GameObject.FindGameObjectWithTag("Enemy");
     }
 
     // Update is called once per frame
@@ -17,11 +20,14 @@ public class RoomTrigger : MonoBehaviour
     {
         
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player") && CurrentRoom != RoomNr && WasUsed == false)
         {
-            EnemyManager.CurrentRoom = RoomNr;
+            Vector3 SpawnPoint = transform.position;
+            CurrentRoom = RoomNr;
+            Instantiate(Enemy, SpawnPoint, Quaternion.Euler(0,0,0));
         }
     }
 }
