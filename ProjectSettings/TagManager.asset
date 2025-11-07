@@ -9,6 +9,7 @@ TagManager:
   - MeleeEnemyAttack
   - RangedEnemyAttack
   - Enemy
+  - Fuck
   layers:
   - Default
   - TransparentFX

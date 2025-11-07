@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cursor
       objectReference: {fileID: 0}
+    - target: {fileID: 6810825974220991337, guid: c483d19fd7878134bb11617bb97e3afe, type: 3}
+      propertyPath: m_TagString
+      value: Fuck
+      objectReference: {fileID: 0}
     - target: {fileID: 8004025830929085067, guid: c483d19fd7878134bb11617bb97e3afe, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -179,11 +183,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8086235570099212389, guid: c483d19fd7878134bb11617bb97e3afe, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1100656293}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c483d19fd7878134bb11617bb97e3afe, type: 3}
+--- !u!1 &187850206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6810825974220991337, guid: c483d19fd7878134bb11617bb97e3afe, type: 3}
+  m_PrefabInstance: {fileID: 44025693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +431,10 @@ PrefabInstance:
       value: Player 1
       objectReference: {fileID: 0}
     - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: FUCK
+      value: 
+      objectReference: {fileID: 187850206}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
       propertyPath: MagSize
       value: 6
       objectReference: {fileID: 0}
@@ -428,6 +445,22 @@ PrefabInstance:
     - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
       propertyPath: SlashDelay
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: BulletSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: CameraSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: DashIframeDuration
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8920504737103715520, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+      propertyPath: OnHitIFrameDuration
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8973184404170480012, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -531,6 +564,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ac7fd82c0d53ed4280aba999909a77b, type: 3}
+--- !u!1 &1100656293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6771867998882307543, guid: 5038800cac5a9934f9b12a3035d6139b, type: 3}
+  m_PrefabInstance: {fileID: 810174471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
