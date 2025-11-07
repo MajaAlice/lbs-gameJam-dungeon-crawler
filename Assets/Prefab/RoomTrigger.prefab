@@ -120,4 +120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyManager: {fileID: 0}
-  RoomNr: 0
+  Enemy: {fileID: 0}
+  RoomNr: 1
+  CurrentRoom: 0
